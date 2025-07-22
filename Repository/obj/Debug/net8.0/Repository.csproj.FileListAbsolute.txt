@@ -1,9 +1,8 @@
 C:\Desenvolvimento\CoreBackend\Repository\bin\Debug\net8.0\Repository.deps.json
-C:\Desenvolvimento\CoreBackend\Repository\bin\Debug\net8.0\Repository.runtimeconfig.json
 C:\Desenvolvimento\CoreBackend\Repository\bin\Debug\net8.0\Repository.dll
 C:\Desenvolvimento\CoreBackend\Repository\bin\Debug\net8.0\Repository.pdb
-C:\Desenvolvimento\CoreBackend\Repository\bin\Debug\net8.0\Core.dll
-C:\Desenvolvimento\CoreBackend\Repository\bin\Debug\net8.0\Core.pdb
+C:\Desenvolvimento\CoreBackend\Repository\bin\Debug\net8.0\Domain.dll
+C:\Desenvolvimento\CoreBackend\Repository\bin\Debug\net8.0\Domain.pdb
 C:\Desenvolvimento\CoreBackend\Repository\obj\Debug\net8.0\Repository.csproj.AssemblyReference.cache
 C:\Desenvolvimento\CoreBackend\Repository\obj\Debug\net8.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
 C:\Desenvolvimento\CoreBackend\Repository\obj\Debug\net8.0\Repository.AssemblyInfoInputs.cache
@@ -14,5 +13,4 @@ C:\Desenvolvimento\CoreBackend\Repository\obj\Debug\net8.0\Repository.csproj.Up2
 C:\Desenvolvimento\CoreBackend\Repository\obj\Debug\net8.0\Repository.dll
 C:\Desenvolvimento\CoreBackend\Repository\obj\Debug\net8.0\refint\Repository.dll
 C:\Desenvolvimento\CoreBackend\Repository\obj\Debug\net8.0\Repository.pdb
-C:\Desenvolvimento\CoreBackend\Repository\obj\Debug\net8.0\Repository.genruntimeconfig.cache
 C:\Desenvolvimento\CoreBackend\Repository\obj\Debug\net8.0\ref\Repository.dll
