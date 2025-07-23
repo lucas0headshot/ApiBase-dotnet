@@ -1,6 +1,8 @@
-﻿using Domain.Entities;
+﻿using Domain.DTOs;
+using Domain.Entities;
 using Domain.Repository;
 using Infrastructure.Exceptions;
+using Infrastructure.Extensions;
 using Microsoft.EntityFrameworkCore;
 
 namespace Application.ApplicationBase
@@ -24,8 +26,26 @@ namespace Application.ApplicationBase
             return entity;
         }
 
-        public Task<IEnumerable<T>> GetAllAsync() =>
-            _repository.ListAllAsync();
+        public async Task<RetConView<T>> GetAllAsync(QueryParams queryParams)
+        {
+            var query = _repository.Query();
+
+            query = QueryHelper.ApplyFilters(query, queryParams.Filters ?? new());
+            query = QueryHelper.ApplySorting(query, queryParams.OrderBy, queryParams.Direction);
+
+            var total = await query.CountAsync();
+
+            var content = await query
+            .Skip((queryParams.Page - 1) * queryParams.Limit)
+            .Take(queryParams.Limit)
+            .ToListAsync();
+
+            return new RetConView<T>
+            {
+                Total = total,
+                Content = content
+            };
+        }
 
         public async Task<T> CreateAsync(T entity)
         {

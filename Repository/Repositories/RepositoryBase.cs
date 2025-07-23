@@ -29,5 +29,10 @@ namespace Repositories.Repository
 
         public void Delete(T entity) =>
             _dbSet.Remove(entity);
+
+        public IQueryable<T> Query()
+        {
+            return _dbContext.Set<T>().AsQueryable();
+        }
     }
 }

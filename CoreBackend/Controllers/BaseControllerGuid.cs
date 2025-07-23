@@ -1,4 +1,5 @@
 ﻿using Application.ApplicationBase;
+using Domain.DTOs;
 using Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
@@ -15,11 +16,11 @@ namespace Api.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GetAll([FromForm] QueryParams queryParams)
         {
             try
             {
-                var result = await _applicationBase.GetAllAsync();
+                var result = await _applicationBase.GetAllAsync(queryParams);
 
                 return Ok(result);
             }
