@@ -1013,20 +1013,6 @@
         "runtime": {
           "bin/placeholder/Domain.dll": {}
         }
-      },
-      "Repository/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "Domain": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "9.0.7"
-        },
-        "compile": {
-          "bin/placeholder/Repository.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Repository.dll": {}
-        }
       }
     }
   },
@@ -2814,11 +2800,6 @@
       "type": "project",
       "path": "../Domain/Domain.csproj",
       "msbuildProject": "../Domain/Domain.csproj"
-    },
-    "Repository/1.0.0": {
-      "type": "project",
-      "path": "../Repository/Repository.csproj",
-      "msbuildProject": "../Repository/Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2826,8 +2807,7 @@
       "Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 9.0.7",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.7",
-      "Microsoft.Extensions.DependencyInjection >= 9.0.7",
-      "Repository >= 1.0.0"
+      "Microsoft.Extensions.DependencyInjection >= 9.0.7"
     ]
   },
   "packageFolders": {
@@ -2867,9 +2847,6 @@
           "projectReferences": {
             "C:\\Desenvolvimento\\CoreBackend\\Domain\\Domain.csproj": {
               "projectPath": "C:\\Desenvolvimento\\CoreBackend\\Domain\\Domain.csproj"
-            },
-            "C:\\Desenvolvimento\\CoreBackend\\Repository\\Repository.csproj": {
-              "projectPath": "C:\\Desenvolvimento\\CoreBackend\\Repository\\Repository.csproj"
             }
           }
         }

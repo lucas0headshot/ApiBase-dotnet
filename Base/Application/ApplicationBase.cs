@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Base.Application
 {
-    class ApplicationBase
+    public class ApplicationBase
     {
     }
 }

@@ -1,12 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Base.Entities;
 
 namespace Base.Repository
 {
-    class IRepositoryBase
+    public interface IRepositoryBase<T> where T : EntityGuid
     {
+        IQueryable<T> Query();
+        Task<T?> GetByIdAsync(Guid id);
+        Task<IEnumerable<T>> ListAllAsync();
+        Task AddAsync(T entity);
+        void Update(T entity);
+        void Delete(T entity);
     }
 }

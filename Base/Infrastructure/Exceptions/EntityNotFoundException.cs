@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Base.Exceptions
+namespace Base.Infrastructure.Exceptions
 {
     class EntityNotFoundException
     {

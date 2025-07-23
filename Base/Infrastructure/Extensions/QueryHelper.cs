@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Base.Entities
+namespace Base.Infrastructure.Extensions
 {
-    class RetConView
+    class QueryHelper
     {
     }
 }
