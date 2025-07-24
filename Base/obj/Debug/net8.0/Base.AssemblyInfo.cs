@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Base")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Mateus Cizeski")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("Backend base with repositories, application layer, pagination and helpers")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b24486e46503f9302d9fdc4470bde8cc359157b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+85a5d930850f19cccab1f349865e970ba5f970c6")]
 [assembly: System.Reflection.AssemblyProductAttribute("Base")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Base")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,4 +1,6 @@
-﻿namespace Base.Infrastructure.AppDbContext
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace Base.Infrastructure.AppDbContext
 {
     public class AppDbContext : DbContext
     {

@@ -2857,8 +2857,10 @@
         "net8.0"
       ],
       "sources": {
+        "C:\\Desenvolvimento\\LocalNugetPackages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
+        "C:\\Users\\mateu\\AppData\\Roaming\\NuGet\\~\\nuget-local": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

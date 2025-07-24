@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Runtime.Serialization;
 
 namespace Base.Infrastructure.Exceptions
 {
-    class EntityNotFoundException
+    [Serializable]
+    public class EntityNotFoundException : Exception
     {
+        public EntityNotFoundException(string name, object key)
+            : base($"Entity '{name}' ({key}) not found.") { }
+        protected EntityNotFoundException(SerializationInfo info, StreamingContext context)
+            : base(info, context) { }
     }
 }

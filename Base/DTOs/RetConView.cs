@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Base.DTOs
+﻿namespace Base.DTOs
 {
-    class RetConView
+    public class RetConView<T>
     {
+        public int Total { get; set; }
+        public IList<T> Content { get; set; }
     }
 }

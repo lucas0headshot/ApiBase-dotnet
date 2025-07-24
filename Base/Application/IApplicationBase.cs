@@ -1,8 +1,9 @@
 ﻿using Base.DTOs;
+using Base.Entities;
 
 namespace Base.Application
 {
-    public interface IApplicationBase
+    public interface IApplicationBase<T> where T : EntityGuid
     {
         Task<T?> GetAsync(Guid id);
         Task<RetConView<T>> GetAllAsync(QueryParams queryParams);

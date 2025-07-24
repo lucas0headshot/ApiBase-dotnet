@@ -1,4 +1,6 @@
 ﻿using Base.Entities;
+using Base.Infrastructure.AppDbContext;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +11,10 @@ namespace Base.Repository
 {
     public class RepositoryBase<T> : IRepositoryBase<T> where T : EntityGuid
     {
-        protected readonly DbContext _dbContext;
+        protected readonly AppDbContext _dbContext;
         protected readonly DbSet<T> _dbSet;
 
-        public RepositoryBase(DbContext context)
+        public RepositoryBase(AppDbContext context)
         {
             _dbContext = context;
             _dbSet = _dbContext.Set<T>();
