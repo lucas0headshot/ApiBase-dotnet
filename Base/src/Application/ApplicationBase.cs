@@ -1,11 +1,11 @@
-﻿using Base.DTOs;
-using Base.Entities;
-using Microsoft.EntityFrameworkCore;
-using Base.Repository;
+﻿using Microsoft.EntityFrameworkCore;
 using Base.Infrastructure.Exceptions;
-using Base.Infrastructure.Extensions;
+using CoreBackend.src.Repository;
+using CoreBackend.src.Infrastructure.Extensions;
+using CoreBackend.src.Entities;
+using CoreBackend.src.DTOs;
 
-namespace Base.Application
+namespace CoreBackend.src.Application
 {
     public class ApplicationBase<T> : IApplicationBase<T> where T : EntityGuid
     {

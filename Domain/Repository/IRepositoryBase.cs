@@ -7,8 +7,5 @@ namespace Domain.Repository
         IQueryable<T> Query();
         Task<T?> GetByIdAsync(Guid id);
         Task<IEnumerable<T>> ListAllAsync();
-        Task AddAsync(T entity);
-        void Update(T entity);
-        void Delete(T entity);
     }
 }

@@ -1,5 +1,5 @@
-﻿using Base.Entities;
-using Base.Infrastructure.AppDbContext;
+﻿using CoreBackend.src.Entities;
+using CoreBackend.src.Infrastructure.AppDbContext;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Base.Repository
+namespace CoreBackend.src.Repository
 {
     public class RepositoryBase<T> : IRepositoryBase<T> where T : EntityGuid
     {

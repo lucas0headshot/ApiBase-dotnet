@@ -1,6 +1,6 @@
-﻿using Base.Entities;
+﻿using CoreBackend.src.Entities;
 
-namespace Base.Repository
+namespace CoreBackend.src.Repository
 {
     public interface IRepositoryBase<T> where T : EntityGuid
     {

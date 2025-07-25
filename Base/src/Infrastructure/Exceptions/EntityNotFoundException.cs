@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace Base.Infrastructure.Exceptions
+namespace CoreBackend.src.Infrastructure.Exceptions
 {
     [Serializable]
     public class EntityNotFoundException : Exception

@@ -1,7 +1,7 @@
-﻿using Base.DTOs;
-using Base.Entities;
+﻿using CoreBackend.src.DTOs;
+using CoreBackend.src.Entities;
 
-namespace Base.Application
+namespace CoreBackend.src.Application
 {
     public interface IApplicationBase<T> where T : EntityGuid
     {

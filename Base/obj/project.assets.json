@@ -7713,9 +7713,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Desenvolvimento\\CoreBackend\\Base\\Base.csproj",
+      "projectUniqueName": "C:\\Desenvolvimento\\CoreBackend\\Base\\CoreBackend.csproj",
       "projectName": "CoreBackend.Base",
-      "projectPath": "C:\\Desenvolvimento\\CoreBackend\\Base\\Base.csproj",
+      "projectPath": "C:\\Desenvolvimento\\CoreBackend\\Base\\CoreBackend.csproj",
       "packagesPath": "C:\\Users\\mateu\\.nuget\\packages\\",
       "outputPath": "C:\\Desenvolvimento\\CoreBackend\\Base\\obj\\",
       "projectStyle": "PackageReference",

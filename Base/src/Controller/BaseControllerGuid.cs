@@ -1,9 +1,9 @@
-﻿using Base.Application;
-using Base.DTOs;
-using Base.Entities;
+﻿using CoreBackend.src.Application;
+using CoreBackend.src.DTOs;
+using CoreBackend.src.Entities;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Base.Controller
+namespace CoreBackend.src.Controller
 {
     [ApiController]
     [Route("api/[controller]")]

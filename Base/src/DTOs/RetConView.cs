@@ -1,4 +1,4 @@
-﻿namespace Base.DTOs
+﻿namespace CoreBackend.src.DTOs
 {
     public class RetConView<T>
     {

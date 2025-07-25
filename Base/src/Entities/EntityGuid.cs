@@ -1,4 +1,4 @@
-﻿namespace Base.Entities
+﻿namespace CoreBackend.src.Entities
 {
     public class EntityGuid
     {

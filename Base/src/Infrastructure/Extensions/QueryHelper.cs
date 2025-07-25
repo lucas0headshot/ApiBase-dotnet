@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Base.Infrastructure.Extensions
+namespace CoreBackend.src.Infrastructure.Extensions
 {
     public static class QueryHelper
     {
