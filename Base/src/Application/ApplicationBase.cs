@@ -4,6 +4,7 @@ using CoreBackend.src.Repository;
 using CoreBackend.src.Infrastructure.Extensions;
 using CoreBackend.src.Entities;
 using CoreBackend.src.DTOs;
+using CoreBackend.src.Infrastructure.Exceptions;
 
 namespace CoreBackend.src.Application
 {
@@ -45,27 +46,6 @@ namespace CoreBackend.src.Application
                 Total = total,
                 Content = content
             };
-        }
-
-        public async Task<T> CreateAsync(T entity)
-        {
-            await _repository.AddAsync(entity);
-            await _dbContext.SaveChangesAsync();
-            return entity;
-        }
-
-        public async Task UpdateAsync(T entity)
-        {
-            _repository.Update(entity);
-            await _dbContext.SaveChangesAsync();
-        }
-
-        public async Task DeleteAsync(Guid id)
-        {
-            var entity = await _repository.GetByIdAsync(id) ?? throw new EntityNotFoundException(typeof(T).Name, id);
-            _repository.Delete(entity);
-
-            await _dbContext.SaveChangesAsync();
         }
     }
 }
