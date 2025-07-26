@@ -6,4 +6,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="src\Application\" />
+    <Folder Include="src\Domain\" />
+    <Folder Include="src\Api\" />
+    <Folder Include="src\Infra\" />
+    <Folder Include="src\Repositorioes\" />
+  </ItemGroup>
+
 </Project>

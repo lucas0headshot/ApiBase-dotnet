@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ApiBase.Core.Domain\ApiBase.Core.Domain.csproj" />
+    <ProjectReference Include="..\ApiBase.Core.Infra\ApiBase.Core.Infra.csproj" />
+  </ItemGroup>
+
 </Project>

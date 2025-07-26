@@ -1,4 +1,4 @@
-﻿namespace ApiBase.Core.Domain.DTOs
+﻿namespace ApiBase.Core.Infra.Query
 {
     public class ConsultationView
     {

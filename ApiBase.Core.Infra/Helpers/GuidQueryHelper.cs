@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using ApiBase.Core.Domain.DTOs;
-using ApiBase.Core.Domain.View;
+﻿using ApiBase.Core.Domain.View;
 using ApiBase.Core.Entities;
 using ApiBase.Core.Infra.Query;
+using System.Linq.Expressions;
 
 namespace ApiBase.Core.Infra.Helpers
 {
