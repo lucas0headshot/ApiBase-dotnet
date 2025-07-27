@@ -1,4 +1,6 @@
-﻿namespace ApiBase.Core.src.Infra.Query
+﻿using Newtonsoft.Json;
+
+namespace ApiBase.Core.src.Infra.Query
 {
     public class QueryParams
     {

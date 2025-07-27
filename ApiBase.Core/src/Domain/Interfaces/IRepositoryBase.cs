@@ -1,4 +1,5 @@
 ﻿using ApiBase.Core.src.Domain.Entities;
+using ApiBase.Core.src.Infra.Query;
 using System.Linq.Expressions;
 
 namespace ApiBase.Core.src.Domain.Interfaces
@@ -10,10 +11,13 @@ namespace ApiBase.Core.src.Domain.Interfaces
         void Remove(T entity);
         void Remove(Guid id);
         void Remove(List<T> entities);
-        T RecoverPorId(Guid id, params string[] includes);
-        IQueryable<T> Recover(params string[] includes);
-        IQueryable<T> Where(Expression<Func<T, bool>> expression);
+
+        T GetById(Guid id, params string[] includes);
+        IQueryable<T> Get(params string[] includes);
+        IQueryable<T> Get(List<FilterModel> filters, List<SortModel> order, params string[] includes);
+        IQueryable<T> Get(List<FilterGroup> filters, List<SortModel> order, params string[] includes);
+
         T FirstOrDefault();
-        IQueryable<T> Recover(QueryParams queryParams);
+        IQueryable<T> Where(Expression<Func<T, bool>> expression);
     }
 }

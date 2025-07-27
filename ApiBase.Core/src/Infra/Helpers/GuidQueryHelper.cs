@@ -1,4 +1,7 @@
-﻿using System.Linq.Expressions;
+﻿using ApiBase.Core.src.Domain.Entities;
+using ApiBase.Core.src.Domain.View;
+using ApiBase.Core.src.Infra.Query;
+using System.Linq.Expressions;
 
 namespace ApiBase.Core.src.Infra.Helpers
 {
