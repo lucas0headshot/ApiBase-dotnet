@@ -1,4 +1,6 @@
-﻿namespace ApiBase.Core.Common.Query
+﻿using Newtonsoft.Json;
+
+namespace ApiBase.Core.Common.Query
 {
     public class QueryParams
     {

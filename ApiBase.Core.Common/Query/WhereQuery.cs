@@ -99,29 +99,5 @@ namespace ApiBase.Core.Common.Query
 
             return query;
         }
-
-        private Expression BuildCondition(FilterModel filtro, PropertyInfo property, ParameterExpression param, MemberExpression member, IQueryable query)
-        {
-            Expression result = null;
-            object obj = null;
-
-            if (property.PropertyType.IsGenericType && property.PropertyType.GetGenericTypeDefinition() != typeof(Nullable<>))
-            {
-                Type type = property.PropertyType.GetGenericArguments()[0];
-                property = type.GetProperty(filtro.PropertyName);
-
-                if (property == null)
-                {
-                    return null;
-                }
-
-
-            }
-            else
-            {
-
-            }
-        }
-
     }
 }

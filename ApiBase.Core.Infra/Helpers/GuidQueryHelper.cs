@@ -1,4 +1,6 @@
 ﻿using ApiBase.Core.Common.Query;
+using ApiBase.Core.Domain.Entities;
+using ApiBase.Core.Domain.View;
 using System.Linq.Expressions;
 
 namespace ApiBase.Core.Infra.Helpers
@@ -58,11 +60,10 @@ namespace ApiBase.Core.Infra.Helpers
             return query.Skip((page - 1) * limit).Take(limit).ToList();
         }
 
-        public IQueryable<T> OrderBy<T>(IQueryable<T> query, QueryParams queryParams)
-            where T : class
+        public IQueryable<T> OrderBy<T>(IQueryable<T> query, QueryParams queryParams) where T : class
         {
             var sortList = BuildOrderBy<T>(queryParams);
-            return new OrderByQuery().Build(query, sortList);
+            return new OrderByQuery().ApplySorting(query, sortList);
         }
 
         public List<SortModel> BuildOrderBy<T>(QueryParams queryParams)
@@ -86,14 +87,17 @@ namespace ApiBase.Core.Infra.Helpers
             return new List<SortModel>();
         }
 
-        public IQueryable<object> ApplyFields<T>(IQueryable<T> query, QueryParams queryParams)
-            where T : class
+        public IQueryable<object> ApplyFields<T>(IQueryable<T> query, QueryParams queryParams) where T : class
         {
-            var fields = queryParams.GetFields();
-            if (fields.Count > 0)
-                return query.SelectDynamic(fields);
+            IQueryable<object> result = query;
+            List<string> fields = queryParams.GetFields();
 
-            return query.Cast<object>();
+            if(fields.Any())
+            {
+                result = query.SelectDynamic(fields);
+            }
+
+            return result;
         }
     }
 }
