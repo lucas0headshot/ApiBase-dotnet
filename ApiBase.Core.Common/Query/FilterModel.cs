@@ -1,4 +1,6 @@
-﻿namespace ApiBase.Core.Common.Query
+﻿using ApiBase.Core.Common.Enums;
+
+namespace ApiBase.Core.Common.Query
 {
     public class FilterModel
     {

@@ -4,3 +4,9 @@ C:\Desenvolvimento\ApiBase\ApiBase.Core.Application\obj\Debug\net8.0\ApiBase.Cor
 C:\Desenvolvimento\ApiBase\ApiBase.Core.Application\obj\Debug\net8.0\ApiBase.Core.Application.AssemblyInfo.cs
 C:\Desenvolvimento\ApiBase\ApiBase.Core.Application\obj\Debug\net8.0\ApiBase.Core.Application.csproj.CoreCompileInputs.cache
 C:\Desenvolvimento\ApiBase\ApiBase.Core.Application\obj\Debug\net8.0\ApiBase.Core.Application.sourcelink.json
+C:\DesenvMateus\ApiBase\ApiBase.Core.Application\obj\Debug\net8.0\ApiBase.Core.Application.csproj.AssemblyReference.cache
+C:\DesenvMateus\ApiBase\ApiBase.Core.Application\obj\Debug\net8.0\ApiBase.Core.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\DesenvMateus\ApiBase\ApiBase.Core.Application\obj\Debug\net8.0\ApiBase.Core.Application.AssemblyInfoInputs.cache
+C:\DesenvMateus\ApiBase\ApiBase.Core.Application\obj\Debug\net8.0\ApiBase.Core.Application.AssemblyInfo.cs
+C:\DesenvMateus\ApiBase\ApiBase.Core.Application\obj\Debug\net8.0\ApiBase.Core.Application.csproj.CoreCompileInputs.cache
+C:\DesenvMateus\ApiBase\ApiBase.Core.Application\obj\Debug\net8.0\ApiBase.Core.Application.sourcelink.json

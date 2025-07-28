@@ -6,7 +6,7 @@
         public void Build(IQueryable<T> query, List<FilterGroup> filters, List<SortModel> sorters)
         {
             query = new WhereQuery().BuildWhere(query, filters);
-            query = new OrderByQuery().BuildOrderBy(query, sorters);
+            query = new OrderByQuery().ApplySorting(query, sorters);
             Query = query;
         }
     }
