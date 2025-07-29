@@ -2,7 +2,7 @@
 
 namespace ApiBase.Core.Common.Query
 {
-    public class QueryParams
+    public class QueryParams : QueryField
     {
         public int? page { get; set; }
         public int? start { get; set; }

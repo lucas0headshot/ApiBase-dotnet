@@ -1,4 +1,5 @@
 ﻿using ApiBase.Core.Application.Base;
+using ApiBase.Core.Common.Extensions;
 using ApiBase.Core.Common.Query;
 using ApiBase.Core.Domain.Entities;
 using ApiBase.Core.Domain.Interfaces;

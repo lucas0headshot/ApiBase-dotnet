@@ -111,23 +111,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mateus.kogl\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\mateu\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\DesenvMateus\\ApiBase\\ApiBase.Core.Application\\ApiBase.Core.Application.csproj",
+      "projectUniqueName": "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Application\\ApiBase.Core.Application.csproj",
       "projectName": "ApiBase.Core.Application",
-      "projectPath": "C:\\DesenvMateus\\ApiBase\\ApiBase.Core.Application\\ApiBase.Core.Application.csproj",
-      "packagesPath": "C:\\Users\\mateus.kogl\\.nuget\\packages\\",
-      "outputPath": "C:\\DesenvMateus\\ApiBase\\ApiBase.Core.Application\\obj\\",
+      "projectPath": "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Application\\ApiBase.Core.Application.csproj",
+      "packagesPath": "C:\\Users\\mateu\\.nuget\\packages\\",
+      "outputPath": "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\mateus.kogl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mateu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -135,19 +137,21 @@
         "net8.0"
       ],
       "sources": {
+        "C:\\Desenvolvimento\\LocalNugetPackages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://nuget.useall.com.br/nuget": {},
-        "https://www.nuget.org/api/v2/": {}
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "C:\\Users\\mateu\\AppData\\Roaming\\NuGet\\~\\nuget-local": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\DesenvMateus\\ApiBase\\ApiBase.Core.Domain\\ApiBase.Core.Domain.csproj": {
-              "projectPath": "C:\\DesenvMateus\\ApiBase\\ApiBase.Core.Domain\\ApiBase.Core.Domain.csproj"
+            "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Domain\\ApiBase.Core.Domain.csproj": {
+              "projectPath": "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Domain\\ApiBase.Core.Domain.csproj"
             },
-            "C:\\DesenvMateus\\ApiBase\\ApiBase.Core.Infra\\ApiBase.Core.Infra.csproj": {
-              "projectPath": "C:\\DesenvMateus\\ApiBase\\ApiBase.Core.Infra\\ApiBase.Core.Infra.csproj"
+            "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Infra\\ApiBase.Core.Infra.csproj": {
+              "projectPath": "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Infra\\ApiBase.Core.Infra.csproj"
             }
           }
         }
@@ -162,7 +166,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -183,7 +187,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
