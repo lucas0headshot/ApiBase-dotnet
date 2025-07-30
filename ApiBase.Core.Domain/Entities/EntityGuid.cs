@@ -2,7 +2,7 @@
 
 namespace ApiBase.Core.Domain.Entities
 {
-    public class IdentifierGuid
+    public class EntityGuid
     {
         public Guid Id { get; set; }
 
@@ -11,7 +11,7 @@ namespace ApiBase.Core.Domain.Entities
             return Id.ToString();
         }
 
-        public string GetIdentificacaoPersonalizacao()
+        public string GetCustomizationIdentifier()
         {
             object[] customAttributes = GetType().GetCustomAttributes(typeof(DescriptionAttribute), inherit: true);
             if (customAttributes.Count() == 0)

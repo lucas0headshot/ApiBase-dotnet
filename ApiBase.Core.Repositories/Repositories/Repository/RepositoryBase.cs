@@ -7,7 +7,7 @@ using System.Linq.Expressions;
 
 namespace ApiBase.Core.Repositories.Repositories.Repository
 {
-    public abstract class RepositoryBase<T> : IRepositoryBase<T>, IDisposable where T : IdentifierGuid
+    public abstract class RepositoryBase<T> : IRepositoryBase<T>, IDisposable where T : EntityGuid
     {
         protected readonly DbContext Db;
         protected readonly DbSet<T> DbSet;

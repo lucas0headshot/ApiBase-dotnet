@@ -3,7 +3,7 @@ using ApiBase.Core.Domain.Interfaces;
 
 namespace ApiBase.Core.Domain.View
 {
-    public class IdGuidView : IdentifierGuid, IView
+    public class IdGuidView : EntityGuid, IView
     {
     }
 }

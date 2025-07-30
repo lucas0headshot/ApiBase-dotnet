@@ -8,9 +8,10 @@ namespace ApiBase.Core.Infra.Helpers
 {
     public class GuidQueryHelper
     {
-        public GetView Page<T, TView>(IQueryable<T> query, QueryParams queryParams) where T : IdentifierGuid where TView : IdGuidView, new()
+        public GetView Page<T, TView>(IQueryable<T> query, QueryParams queryParams) where T : EntityGuid where TView : IdGuidView, new()
         {
-            IQueryable<TView> projected = ApplyQuery(query, queryParams).To().New<TView>();
+            IQueryable<T> filtered = ApplyQuery(query, queryParams);
+            IQueryable<TView> projected = filtered.Project().To<TView>();
             IQueryable<object> shaped = ApplyFields(projected, queryParams);
 
             return new GetView
@@ -95,7 +96,7 @@ namespace ApiBase.Core.Infra.Helpers
 
             if(fields.Any())
             {
-                result = query.SelectDynamic(fields);
+                //result = query.SelectDynamic(fields);
             }
 
             return result;

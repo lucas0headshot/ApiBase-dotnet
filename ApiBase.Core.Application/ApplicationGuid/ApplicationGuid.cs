@@ -6,10 +6,11 @@ using ApiBase.Core.Domain.Interfaces;
 using ApiBase.Core.Domain.View;
 using ApiBase.Core.Infra.Helpers;
 using System.Linq.Expressions;
+using System.Reflection;
 
 namespace ApiBase.Core.Application.ApplicationGuid
 {
-    public abstract class ApplicationGuid<TEntity, TRepository, TView> : ApplicationBase<TEntity, TRepository>, IApplicationGuid<TView> where TEntity : IdentifierGuid, new() where TRepository : IRepositoryBase<TEntity> where TView : IdGuidView, new()
+    public abstract class ApplicationGuid<TEntity, TRepository, TView> : ApplicationBase<TEntity, TRepository>, IApplicationGuid<TView> where TEntity : EntityGuid, new() where TRepository : IRepositoryBase<TEntity> where TView : IdGuidView, new()
     {
         public ApplicationGuid(IUnitOfWork unitOfWork, TRepository repository) : base(unitOfWork, repository) { }
 
@@ -36,12 +37,26 @@ namespace ApiBase.Core.Application.ApplicationGuid
 
         public object Get(Guid id, List<string> fields)
         {
-            IQueryable<TEntity> query = base.Repository.Where((TEntity e) => e.Id == id).Where(DefaultFilter());
-            dynamic value = (fields.Any() ? query.Qry().New<TView>().FirstOrDefault() : query.Qry().New(TypeBuilderHelper.CreateType(typeof(TView), fields)).FirstOrDefault());
+            IQueryable<TEntity> query = base.Repository.Where(e => e.Id == id).Where(DefaultFilter());
 
-            if (value == null) return null;
+            object? result;
 
-            return new { }; //
+            if (fields == null || fields.Count == 0)
+            {
+                result = query.Project().To<TView>().FirstOrDefault();
+            }
+            else
+            {
+                var propertyMap = typeof(TView)
+                    .GetProperties(BindingFlags.Public | BindingFlags.Instance)
+                    .Where(p => fields.Contains(p.Name))
+                    .ToDictionary(p => p.Name, p => p.PropertyType);
+
+                var dynamicType = CustomTypeBuilder.CreateType(propertyMap);
+                result = query.Project().To(dynamicType).FirstOrDefault();
+            }
+
+            return result ?? null!;
         }
 
         public virtual Expression<Func<TEntity, bool>> DefaultFilter()

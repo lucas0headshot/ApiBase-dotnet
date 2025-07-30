@@ -2,7 +2,7 @@
 {
     public interface IUnitOfWork : IDisposable
     {
-        void Persist();
-        void RejectChanges();
+        void Commit();
+        void RollbackChanges();
     }
 }

@@ -3,7 +3,7 @@ using ApiBase.Core.Domain.Interfaces;
 
 namespace ApiBase.Core.Application.Base
 {
-    public class ApplicationBase<TEntity, TRepository> where TEntity : IdentifierGuid, new() where TRepository : IRepositoryBase<TEntity>
+    public class ApplicationBase<TEntity, TRepository> where TEntity : EntityGuid, new() where TRepository : IRepositoryBase<TEntity>
     {
         protected IUnitOfWork unitOfWork { get; set; }
         protected TRepository Repository { get; set; }
@@ -14,14 +14,14 @@ namespace ApiBase.Core.Application.Base
             Repository = repository;
         }
 
-        protected void Persist()
+        protected void Commit()
         {
-            unitOfWork.Persist();
+            unitOfWork.Commit();
         }
 
-        protected void RejectChanges()
+        protected void RollbackChanges()
         {
-            unitOfWork.RejectChanges();
+            unitOfWork.RollbackChanges();
         }
     }
 }

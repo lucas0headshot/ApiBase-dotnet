@@ -41,10 +41,10 @@ namespace ApiBase.Core.Api.Controllers.BaseGuid
 
                 return Return(HttpStatusCode.OK, content);
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 return ReturnError(ex);
             }
-
+        }
     }
 }

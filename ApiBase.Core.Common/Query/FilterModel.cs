@@ -42,14 +42,14 @@ namespace ApiBase.Core.Common.Query
 
             return @operator switch
             {
-                OpEquals => FilterOperator.Equals,
-                OpGreater => FilterOperator.Greater,
-                OpLess => FilterOperator.Less,
+                OpEquals => FilterOperator.Equal,
+                OpGreater => FilterOperator.GreaterThan,
+                OpLess => FilterOperator.LessThan,
                 OpContains => FilterOperator.Contains,
                 OpContainsAll => FilterOperator.ContainsAll,
                 OpIn => FilterOperator.In,
-                OpGreaterOrEqual => FilterOperator.GreaterOrEqual,
-                OpLessOrEqual => FilterOperator.LessOrEqual,
+                OpGreaterOrEqual => FilterOperator.GreaterThanOrEqual,
+                OpLessOrEqual => FilterOperator.LessThanOrEqual,
                 OpStartsWith => FilterOperator.StartsWith,
                 OpEndsWith => FilterOperator.EndsWith,
                 OpInOrNull => FilterOperator.InOrNull,

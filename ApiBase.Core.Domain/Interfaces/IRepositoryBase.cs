@@ -4,7 +4,7 @@ using System.Linq.Expressions;
 
 namespace ApiBase.Core.Domain.Interfaces
 {
-    public interface IRepositoryBase<T> : IDisposable where T : IdentifierGuid
+    public interface IRepositoryBase<T> : IDisposable where T : EntityGuid
     {
         void Insert(T entity);
         void Insert(List<T> entities);
