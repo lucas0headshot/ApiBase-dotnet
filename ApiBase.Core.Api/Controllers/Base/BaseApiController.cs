@@ -1,5 +1,6 @@
 ﻿using ApiBase.Core.Common.DTOs;
 using ApiBase.Core.Common.Extensions;
+using ApiBase.Core.Common.Projection;
 using ApiBase.Core.Common.Query;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
@@ -96,12 +97,25 @@ namespace ApiBase.Core.Api.Controllers.Base
         public static QueryExecutionDTO BuildQueryResult<T>(QueryParams queryParams, IQueryable<T> query) where T : class
         {
             query = ApplyOrdering(queryParams, query);
-            IQueryable<object> resultQuery = query;
+            IQueryable<object> resultQuery;
 
             var fields = queryParams.GetFields();
+
             if (fields.Count > 0)
             {
-                resultQuery = query.Qry().New(TypeBuilderHelper.CreateType(typeof(T), fields));
+                var propertyDict = typeof(T)
+                    .GetProperties()
+                    .Where(p => fields.Contains(p.Name))
+                    .ToDictionary(p => p.Name, p => p.PropertyType);
+
+                Type dynamicType = CustomTypeBuilder.CreateType(propertyDict);
+
+                var selector = new ProjectionBuilder().Build<T>(dynamicType);
+                resultQuery = query.Select(selector);
+            }
+            else
+            {
+                resultQuery = query.Cast<object>();
             }
 
             int total = resultQuery.Count();
@@ -115,12 +129,12 @@ namespace ApiBase.Core.Api.Controllers.Base
 
         private static IQueryable<T> ApplyOrdering<T>(QueryParams queryParams, IQueryable<T> query)
         {
-            var orderList = queryParams.GetSort() ?? new List<OrderField>
+            var orderList = queryParams.GetSort() ?? new List<SortModel>
             {
-                new OrderField { property = "Id", direction = "asc" }
+                new SortModel { filterValue = "Id", direction = "asc" }
             };
 
-            return new OrderByQuery().BuildOrderBy(query, orderList);
+            return new OrderByQuery().ApplySorting(query, orderList);
         }
 
         private static List<object> Paginate(IQueryable<object> query, int page, int limit)
