@@ -32,7 +32,7 @@ namespace ApiBase.Core.Api.Controllers.BaseGuid
         }
 
         [HttpGet("{id}")]
-        public virtual IActionResult GetList([FromRoute] Guid id, [FromQuery] QueryField queryField)
+        public virtual IActionResult GetById([FromRoute] Guid id, [FromQuery] QueryField queryField)
         {
             try
             {

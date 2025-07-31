@@ -39,7 +39,7 @@ namespace ApiBase.Core.Application.ApplicationGuid
 
             if (consultationView.Content != null && consultationView.Content.Any())
             {
-                //return _unitOfWork.MontarCamposPersonalizadosListaGuid<TEntidade>(retConView.Conteudo.ToList()).FirstOrDefault();
+                return _unitOfWork.BuildCustomFieldsList<TEntity>(consultationView.Content.ToList()).FirstOrDefault();
             }
 
             return new { };
