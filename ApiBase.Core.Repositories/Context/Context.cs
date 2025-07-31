@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace ApiBase.Core.Repositories.Repositories.Contexts
+namespace ApiBase.Core.Repositories.Contexts
 {
     public class Context : DbContext
     {

@@ -19,7 +19,7 @@ namespace ApiBase.Core.Api.Controllers.BaseGuid
             {
                 var result = base.Application.Get(queryParams);
 
-                return Return(HttpStatusCode.OK, new ApiReadResponse
+                return Respond(HttpStatusCode.OK, new ApiPaginatedResponse
                 {
                     Content = result.Content,
                     Total = result.Total
@@ -27,7 +27,7 @@ namespace ApiBase.Core.Api.Controllers.BaseGuid
             }
             catch(Exception ex)
             {
-                return ReturnError(ex);
+                return RespondError(ex);
             }
         }
 
@@ -39,11 +39,11 @@ namespace ApiBase.Core.Api.Controllers.BaseGuid
                 List<string> list = queryField.GetFields();
                 object content = (list.Any() ? base.Application.Get(id) : base.Application.Get(id, list));
 
-                return Return(HttpStatusCode.OK, content);
+                return Respond(HttpStatusCode.OK, content);
             }
             catch (Exception ex)
             {
-                return ReturnError(ex);
+                return RespondError(ex);
             }
         }
     }

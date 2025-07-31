@@ -17,88 +17,85 @@ namespace ApiBase.Core.Api.Controllers.Base
         }
 
         [ApiExplorerSettings(IgnoreApi = true)]
-        public IActionResult Return<TResponse>(HttpStatusCode statusCode, TResponse response)
+        public IActionResult Respond<TResponse>(HttpStatusCode statusCode, TResponse response)
         {
-            return new ObjectResult(response)
-            {
-                StatusCode = (int)statusCode
-            };
+            return new ObjectResult(response) { StatusCode = (int)statusCode };
         }
 
         [ApiExplorerSettings(IgnoreApi = true)]
-        [HttpGet("ReturnErroWithObject")]
-        public IActionResult ReturnError(ApiErrorResponse response)
+        [HttpGet("ReturnErrorWithObject")]
+        public IActionResult RespondError(ApiErrorResponse error)
         {
-            return BadRequest(response);
+            return BadRequest(error);
         }
 
         [ApiExplorerSettings(IgnoreApi = true)]
         [HttpGet("ReturnError")]
-        public IActionResult ReturnError(string message = "", object content = null, int? errorCode = null)
+        public IActionResult RespondError(string message = "", object content = null, int? errorCode = null)
         {
-            if (errorCode.HasValue)
-            {
-                var error = new ApiErrorResponse
-                {
-                    Message = message,
-                    Content = content,
-                    ErrorType = "AppError" + errorCode
-                };
-                return ReturnError(error);
-            }
-
-            return ReturnError(new ApiErrorResponse
+            var errorResponse = new ApiErrorResponse
             {
                 Message = message,
-                Content = content
-            });
+                Content = content,
+                ErrorType = errorCode.HasValue ? $"AppError{errorCode}" : null
+            };
+
+            return RespondError(errorResponse);
         }
 
         [ApiExplorerSettings(IgnoreApi = true)]
         [HttpGet("ReturnErrorFromException")]
-        public IActionResult ReturnError(Exception ex)
+        public IActionResult RespondError(Exception ex)
         {
-            return ReturnError(ex.FlattenMessage());
+            return RespondError(ex.FlattenMessage());
         }
 
         [ApiExplorerSettings(IgnoreApi = true)]
         [HttpGet("ReturnSuccessWithObject")]
-        public IActionResult ReturnSuccess(ApiSuccessResponse response)
+        public IActionResult RespondSuccess(ApiSuccessResponse success)
         {
-            return Ok(response);
+            return Ok(success);
         }
 
         [ApiExplorerSettings(IgnoreApi = true)]
         [HttpGet("ReturnSuccess")]
-        public IActionResult ReturnSuccess(string message = "", object content = null, int? requestCode = null)
+        public IActionResult RespondSuccess(string message = "", object content = null, int? requestCode = null)
         {
-            return ReturnSuccess(new ApiSuccessResponse
+            var successResponse = new ApiSuccessResponse
             {
                 Message = message,
                 Content = content ?? new { },
                 RequestCode = requestCode
-            });
+            };
+
+            return RespondSuccess(successResponse);
         }
 
         [ApiExplorerSettings(IgnoreApi = true)]
-        public static QueryExecutionDTO BuildPaginatedQueryResult<T>(QueryParams queryParams, IQueryable<T> query) where T : class
+        public static ApiPaginatedResponse BuildPaginatedResponse<T>(QueryParams queryParams, IQueryable<T> query) where T : class
         {
-            var result = BuildQueryResult(queryParams, query);
-            var paged = Paginate(result.Data, queryParams.page.GetValueOrDefault(), queryParams.limit.GetValueOrDefault(25));
+            var result = BuildQueryResponse(queryParams, query);
 
-            return new QueryExecutionDTO
+            if (result.Content is not IQueryable<object> contentQueryable)
             {
-                Data = paged.AsQueryable(),
+                throw new InvalidCastException("The content returned from BuildQueryResponse is not of type IQueryable<object>.");
+            }
+
+            var paged = Paginate(contentQueryable, queryParams.page.GetValueOrDefault(), queryParams.limit.GetValueOrDefault(25));
+
+            return new ApiPaginatedResponse
+            {
+                Content = paged.AsQueryable(),
                 Total = result.Total
             };
         }
 
         [ApiExplorerSettings(IgnoreApi = true)]
-        public static QueryExecutionDTO BuildQueryResult<T>(QueryParams queryParams, IQueryable<T> query) where T : class
+        public static ApiPaginatedResponse BuildQueryResponse<T>(QueryParams queryParams, IQueryable<T> query) where T : class
         {
             query = ApplyOrdering(queryParams, query);
-            IQueryable<object> resultQuery;
 
+            IQueryable<object> resultQuery;
             var fields = queryParams.GetFields();
 
             if (fields.Count > 0)
@@ -108,8 +105,7 @@ namespace ApiBase.Core.Api.Controllers.Base
                     .Where(p => fields.Contains(p.Name))
                     .ToDictionary(p => p.Name, p => p.PropertyType);
 
-                Type dynamicType = CustomTypeBuilder.CreateType(propertyDict);
-
+                var dynamicType = CustomTypeBuilder.CreateType(propertyDict);
                 var selector = new ProjectionBuilder().Build<T>(dynamicType);
                 resultQuery = query.Select(selector);
             }
@@ -118,12 +114,10 @@ namespace ApiBase.Core.Api.Controllers.Base
                 resultQuery = query.Cast<object>();
             }
 
-            int total = resultQuery.Count();
-
-            return new QueryExecutionDTO
+            return new ApiPaginatedResponse
             {
-                Data = resultQuery,
-                Total = total
+                Content = resultQuery,
+                Total = resultQuery.Count()
             };
         }
 

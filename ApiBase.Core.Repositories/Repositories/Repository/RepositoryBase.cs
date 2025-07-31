@@ -1,7 +1,7 @@
 ﻿using ApiBase.Core.Common.Query;
 using ApiBase.Core.Domain.Entities;
 using ApiBase.Core.Domain.Interfaces;
-using ApiBase.Core.Repositories.Repositories.Contexts;
+using ApiBase.Core.Repositories.Contexts;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 

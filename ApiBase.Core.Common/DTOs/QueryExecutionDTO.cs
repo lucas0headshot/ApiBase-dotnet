@@ -1,8 +1,8 @@
 ﻿namespace ApiBase.Core.Common.DTOs
 {
-    public class ApiReadResponse
+    public class QueryExecutionDTO
     {
-        public object Content { get; set; }
+        public IQueryable<object> Data { get; set; }
         public int Total { get; set; }
     }
 }

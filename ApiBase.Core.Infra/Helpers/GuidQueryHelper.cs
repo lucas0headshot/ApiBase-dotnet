@@ -96,7 +96,7 @@ namespace ApiBase.Core.Infra.Helpers
 
             if(fields.Any())
             {
-                //result = query.SelectDynamic(fields);
+                result = query.SelectDynamic(fields);
             }
 
             return result;

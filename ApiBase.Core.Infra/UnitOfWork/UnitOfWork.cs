@@ -72,5 +72,38 @@ namespace ApiBase.Core.Infra.UnitOfWork
                 }
             }
         }
+
+        public IList<object> BuildCustomFieldsList<T>(List<object> pagedResults) where T : EntityGuid, new()
+        {
+            return pagedResults.Select(obj => MergeCustomFields<T>(obj)).ToList();
+        }
+
+        public object BuildCustomFieldsList<T>(object result) where T : EntityGuid, new()
+        {
+            return MergeCustomFields<T>(result);
+        }
+
+        private object MergeCustomFields<T>(object source) where T : EntityGuid, new()
+        {
+            var entityProps = typeof(T).GetProperties(BindingFlags.Public | BindingFlags.Instance).Select(p => p.Name).ToHashSet();
+
+            if (source is IDictionary<string, object> dict)
+            {
+                var result = new Dictionary<string, object>(dict);
+                result["CustomFieldInfo"] = $"Custom fields for {typeof(T).Name}";
+                return result;
+            }
+
+            var target = new Dictionary<string, object>();
+            var props = source.GetType().GetProperties(BindingFlags.Public | BindingFlags.Instance);
+
+            foreach (var prop in props)
+            {
+                target[prop.Name] = prop.GetValue(source);
+            }
+
+            target["CustomFieldInfo"] = $"Custom fields for {typeof(T).Name}";
+            return target;
+        }
     }
 }
