@@ -10,9 +10,9 @@ C:\Desenvolvimento\ApiBase\ApiBase.Core.Application\bin\Debug\net8.0\ApiBase.Cor
 C:\Desenvolvimento\ApiBase\ApiBase.Core.Application\bin\Debug\net8.0\ApiBase.Core.Common.dll
 C:\Desenvolvimento\ApiBase\ApiBase.Core.Application\bin\Debug\net8.0\ApiBase.Core.Domain.dll
 C:\Desenvolvimento\ApiBase\ApiBase.Core.Application\bin\Debug\net8.0\ApiBase.Core.Infra.dll
+C:\Desenvolvimento\ApiBase\ApiBase.Core.Application\bin\Debug\net8.0\ApiBase.Core.Common.pdb
 C:\Desenvolvimento\ApiBase\ApiBase.Core.Application\bin\Debug\net8.0\ApiBase.Core.Domain.pdb
 C:\Desenvolvimento\ApiBase\ApiBase.Core.Application\bin\Debug\net8.0\ApiBase.Core.Infra.pdb
-C:\Desenvolvimento\ApiBase\ApiBase.Core.Application\bin\Debug\net8.0\ApiBase.Core.Common.pdb
 C:\Desenvolvimento\ApiBase\ApiBase.Core.Application\obj\Debug\net8.0\ApiBase.Core.Application.csproj.AssemblyReference.cache
 C:\Desenvolvimento\ApiBase\ApiBase.Core.Application\obj\Debug\net8.0\ApiBase.Core.Application.GeneratedMSBuildEditorConfig.editorconfig
 C:\Desenvolvimento\ApiBase\ApiBase.Core.Application\obj\Debug\net8.0\ApiBase.Core.Application.AssemblyInfoInputs.cache

@@ -36,6 +36,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Common\\ApiBase.Core.Common.csproj": {
+                "projectPath": "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Common\\ApiBase.Core.Common.csproj"
+              },
               "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Domain\\ApiBase.Core.Domain.csproj": {
                 "projectPath": "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Domain\\ApiBase.Core.Domain.csproj"
               },

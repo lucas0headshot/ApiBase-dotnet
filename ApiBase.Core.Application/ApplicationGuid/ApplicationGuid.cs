@@ -5,7 +5,6 @@ using ApiBase.Core.Domain.Entities;
 using ApiBase.Core.Domain.Interfaces;
 using ApiBase.Core.Domain.View;
 using ApiBase.Core.Infra.Helpers;
-using ApiBase.Core.Infra.UnitOfWork;
 using System.Linq.Expressions;
 using System.Reflection;
 
