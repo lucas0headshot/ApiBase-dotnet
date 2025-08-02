@@ -1,4 +1,6 @@
-﻿namespace ApiBase.Core.Common.DTOs
+﻿using System.Linq;
+
+namespace ApiBase.Core.Common.DTOs
 {
     public class QueryExecutionDTO
     {

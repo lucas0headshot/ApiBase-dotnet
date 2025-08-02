@@ -1,4 +1,6 @@
 ﻿using ApiBase.Core.Common.Extensions;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace ApiBase.Core.Common.Query
 {

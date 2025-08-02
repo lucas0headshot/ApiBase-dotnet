@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("ApiBase.Core.Common")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Mateus")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("My Common lib with shared resources")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+09bd8f068bf128b7f2efa3cdfeec030fdb96d868")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+60a2acfabebe486116a426d44c78769571a1213b")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiBase.Core.Common")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiBase.Core.Common")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

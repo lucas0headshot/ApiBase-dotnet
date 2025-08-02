@@ -1,4 +1,6 @@
-﻿namespace ApiBase.Core.Common.Projection
+﻿using System.Linq;
+
+namespace ApiBase.Core.Common.Projection
 {
     public class ObjectProjection<TSource> : Projection<TSource> where TSource : class
     {

@@ -1,0 +1,6 @@
+C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\obj\Release\net8.0\ApiBase.Core.Common.csproj.AssemblyReference.cache
+C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\obj\Release\net8.0\ApiBase.Core.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\obj\Release\net8.0\ApiBase.Core.Common.AssemblyInfoInputs.cache
+C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\obj\Release\net8.0\ApiBase.Core.Common.AssemblyInfo.cs
+C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\obj\Release\net8.0\ApiBase.Core.Common.csproj.CoreCompileInputs.cache
+C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\obj\Release\net8.0\ApiBase.Core.Common.sourcelink.json

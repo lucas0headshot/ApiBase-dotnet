@@ -1,5 +1,7 @@
 ﻿using ApiBase.Core.Common.Attributes;
+using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Reflection;
 
 namespace ApiBase.Core.Common.Bindings

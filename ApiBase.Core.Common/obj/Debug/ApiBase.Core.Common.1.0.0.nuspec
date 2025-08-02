@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ApiBase.Core.Common</id>
+    <version>1.0.0</version>
+    <authors>Mateus</authors>
+    <description>My Common lib with shared resources</description>
+    <repository type="git" commit="60a2acfabebe486116a426d44c78769571a1213b" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="Newtonsoft.Json" version="13.0.3" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\bin\Debug\net8.0\ApiBase.Core.Common.dll" target="lib\net8.0\ApiBase.Core.Common.dll" />
+  </files>
+</package>

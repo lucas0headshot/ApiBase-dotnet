@@ -1,4 +1,6 @@
 ﻿using ApiBase.Core.Common.Enums;
+using System;
+using System.Linq;
 
 namespace ApiBase.Core.Common.Query
 {

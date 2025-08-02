@@ -1,4 +1,6 @@
-﻿namespace ApiBase.Core.Common.Query
+﻿using System.Collections.Generic;
+
+namespace ApiBase.Core.Common.Query
 {
     public class FilterGroup
     {

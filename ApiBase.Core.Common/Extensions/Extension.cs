@@ -1,4 +1,6 @@
-﻿namespace ApiBase.Core.Common.Extensions
+﻿using System;
+
+namespace ApiBase.Core.Common.Extensions
 {
     public static class Extension
     {
