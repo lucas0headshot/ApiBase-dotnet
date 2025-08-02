@@ -1,5 +1,7 @@
 ﻿using ApiBase.Core.Common.Query;
 using ApiBase.Core.Domain.View;
+using System;
+using System.Collections.Generic;
 
 namespace ApiBase.Core.Application.ApplicationGuid
 {

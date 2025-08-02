@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("ApiBase.Core.Domain")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Mateus")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("My Domain lib with Entity and Interfaces")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+60a2acfabebe486116a426d44c78769571a1213b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eeb8f4a53c874d7a487d837f3ed648558a5a02fd")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiBase.Core.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiBase.Core.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

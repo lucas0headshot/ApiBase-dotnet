@@ -1,5 +1,8 @@
 ﻿using ApiBase.Core.Common.Query;
 using ApiBase.Core.Domain.Entities;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Linq.Expressions;
 
 namespace ApiBase.Core.Domain.Interfaces

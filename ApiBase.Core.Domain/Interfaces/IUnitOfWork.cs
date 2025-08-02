@@ -1,4 +1,6 @@
 ﻿using ApiBase.Core.Domain.Entities;
+using System;
+using System.Collections.Generic;
 
 namespace ApiBase.Core.Domain.Interfaces
 {

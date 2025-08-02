@@ -1,15 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Version>1.0.0</Version>
+		<Authors>Mateus</Authors>
+		<Description>My Api lib with Applications</Description>
+		<PackageId>ApiBase.Core.Application</PackageId>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\ApiBase.Core.Common\ApiBase.Core.Common.csproj" />
-    <ProjectReference Include="..\ApiBase.Core.Domain\ApiBase.Core.Domain.csproj" />
-    <ProjectReference Include="..\ApiBase.Core.Infra\ApiBase.Core.Infra.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\ApiBase.Core.Common\ApiBase.Core.Common.csproj" />
+		<ProjectReference Include="..\ApiBase.Core.Domain\ApiBase.Core.Domain.csproj" />
+		<ProjectReference Include="..\ApiBase.Core.Infra\ApiBase.Core.Infra.csproj" />
+	</ItemGroup>
 
 </Project>

@@ -4,3 +4,10 @@ C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\obj\Release\net8.0\ApiBase.Core.C
 C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\obj\Release\net8.0\ApiBase.Core.Common.AssemblyInfo.cs
 C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\obj\Release\net8.0\ApiBase.Core.Common.csproj.CoreCompileInputs.cache
 C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\obj\Release\net8.0\ApiBase.Core.Common.sourcelink.json
+C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\bin\Release\net8.0\ApiBase.Core.Common.deps.json
+C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\bin\Release\net8.0\ApiBase.Core.Common.dll
+C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\bin\Release\net8.0\ApiBase.Core.Common.pdb
+C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\obj\Release\net8.0\ApiBase.Core.Common.dll
+C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\obj\Release\net8.0\refint\ApiBase.Core.Common.dll
+C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\obj\Release\net8.0\ApiBase.Core.Common.pdb
+C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\obj\Release\net8.0\ref\ApiBase.Core.Common.dll

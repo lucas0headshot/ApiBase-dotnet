@@ -4,6 +4,9 @@ using ApiBase.Core.Common.DTOs;
 using ApiBase.Core.Common.Query;
 using ApiBase.Core.Domain.View;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 
 namespace ApiBase.Core.Api.Controllers.BaseGuid
