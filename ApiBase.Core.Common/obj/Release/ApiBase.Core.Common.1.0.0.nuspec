@@ -5,7 +5,7 @@
     <version>1.0.0</version>
     <authors>Mateus</authors>
     <description>My Common lib with shared resources</description>
-    <repository type="git" commit="eeb8f4a53c874d7a487d837f3ed648558a5a02fd" />
+    <repository type="git" commit="305e7c9bcd709f5e4fc5dda8c2ddc550090df11f" />
     <dependencies>
       <group targetFramework="net8.0">
         <dependency id="Newtonsoft.Json" version="13.0.3" exclude="Build,Analyzers" />

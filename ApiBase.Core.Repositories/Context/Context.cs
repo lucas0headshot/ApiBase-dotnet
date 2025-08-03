@@ -10,5 +10,15 @@ namespace ApiBase.Core.Repositories.Contexts
         {
             base.OnConfiguring(optionsBuilder);
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            ModelCreating(modelBuilder);
+            base.OnModelCreating(modelBuilder);
+        }
+
+        public virtual void ModelCreating(ModelBuilder modelBuilder)
+        {
+        }
     }
 }

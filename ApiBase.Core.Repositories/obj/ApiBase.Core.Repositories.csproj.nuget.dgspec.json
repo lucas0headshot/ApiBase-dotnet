@@ -29,7 +29,6 @@
           "C:\\Desenvolvimento\\LocalNugetPackages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Users\\mateu\\AppData\\Roaming\\NuGet\\~\\nuget-local": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -104,7 +103,6 @@
           "C:\\Desenvolvimento\\LocalNugetPackages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Users\\mateu\\AppData\\Roaming\\NuGet\\~\\nuget-local": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -153,7 +151,7 @@
       }
     },
     "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Repositories\\ApiBase.Core.Repositories.csproj": {
-      "version": "1.0.0",
+      "version": "1.0.1",
       "restore": {
         "projectUniqueName": "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Repositories\\ApiBase.Core.Repositories.csproj",
         "projectName": "ApiBase.Core.Repositories",
@@ -177,7 +175,6 @@
           "C:\\Desenvolvimento\\LocalNugetPackages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Users\\mateu\\AppData\\Roaming\\NuGet\\~\\nuget-local": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
