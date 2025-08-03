@@ -5,7 +5,7 @@
     <version>1.0.0</version>
     <authors>Mateus</authors>
     <description>My Domain lib with Entity and Interfaces</description>
-    <repository type="git" commit="305e7c9bcd709f5e4fc5dda8c2ddc550090df11f" />
+    <repository type="git" commit="777864d476b9fae7af57ad41004d2e6b60e7200f" />
     <dependencies>
       <group targetFramework="net8.0">
         <dependency id="ApiBase.Core.Common" version="1.0.0" exclude="Build,Analyzers" />

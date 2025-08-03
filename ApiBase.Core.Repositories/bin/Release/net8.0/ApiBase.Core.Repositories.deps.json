@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "ApiBase.Core.Repositories/1.0.1": {
+      "ApiBase.Core.Repositories/1.0.2": {
         "dependencies": {
           "ApiBase.Core.Common": "1.0.0",
           "ApiBase.Core.Domain": "1.0.0",
@@ -196,7 +196,7 @@
     }
   },
   "libraries": {
-    "ApiBase.Core.Repositories/1.0.1": {
+    "ApiBase.Core.Repositories/1.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

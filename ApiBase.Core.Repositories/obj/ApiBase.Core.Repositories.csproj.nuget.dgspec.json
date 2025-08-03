@@ -151,7 +151,7 @@
       }
     },
     "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Repositories\\ApiBase.Core.Repositories.csproj": {
-      "version": "1.0.1",
+      "version": "1.0.2",
       "restore": {
         "projectUniqueName": "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Repositories\\ApiBase.Core.Repositories.csproj",
         "projectName": "ApiBase.Core.Repositories",
