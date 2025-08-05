@@ -6,9 +6,9 @@ namespace ApiBase.Core.Common.Bindings
 {
     public class DefaultBindingResolver : IBindingResolver
     {
-        public MemberAssignment Resolver(MemberInitResolver resolvedorMemberInit, int nivel, Expression parentExp, PropertyInfo propSrc, PropertyInfo propDest)
+        public MemberAssignment Resolve(MemberInitResolver memberInitResolver, int level, Expression parentExpression, PropertyInfo sourceProperty, PropertyInfo destinationProperty)
         {
-            return Expression.Bind(propDest, Expression.Property(parentExp, propSrc));
+            return Expression.Bind(destinationProperty, Expression.Property(parentExpression, sourceProperty));
         }
     }
 }

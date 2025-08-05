@@ -8,46 +8,52 @@ namespace ApiBase.Core.Common.Bindings
 {
     public class BindingFactory
     {
-        private readonly Dictionary<Type, IBindingResolver> _cache = new();
+        private readonly Dictionary<Type, IBindingResolver> _resolverCache;
 
         public BindingFactory()
         {
-            _cache = new Dictionary<Type, IBindingResolver>();
+            _resolverCache = new Dictionary<Type, IBindingResolver>();
         }
 
-        private IBindingResolver GetResolvedor(Type type)
+        private IBindingResolver GetResolver(Type resolverType)
         {
-            if (_cache.TryGetValue(type, out IBindingResolver value))
+            if (_resolverCache.TryGetValue(resolverType, out var resolver))
             {
-                return value;
+                return resolver;
             }
 
-            return _cache[type] = (IBindingResolver)Activator.CreateInstance(type);
+            var instance = (IBindingResolver)Activator.CreateInstance(resolverType)!;
+            _resolverCache[resolverType] = instance;
+            return instance;
         }
 
-        public IBindingResolver GetInstance(PropertyInfo propSrc, PropertyInfo propDest)
+        public IBindingResolver GetInstance(PropertyInfo sourceProperty, PropertyInfo destinationProperty)
         {
-            if (propSrc.PropertyType == propDest.PropertyType)
+            var sourceType = sourceProperty.PropertyType;
+            var destinationType = destinationProperty.PropertyType;
+
+            if (sourceType == destinationType)
             {
-                return GetResolvedor(typeof(DefaultBindingResolver));
+                return GetResolver(typeof(DefaultBindingResolver));
             }
 
-            if (propSrc.PropertyType.IsGenericType && typeof(IEnumerable).IsAssignableFrom(propSrc.PropertyType))
+            if (sourceType.IsGenericType && typeof(IEnumerable).IsAssignableFrom(sourceType))
             {
-                return GetResolvedor(typeof(ListBindingResolver));
+                return GetResolver(typeof(ListBindingResolver));
             }
 
-            if (propDest.PropertyType.IsClass)
+            if (destinationType.IsClass)
             {
-                if (Attribute.IsDefined(propSrc, typeof(ComplexBindingResolver)) || Attribute.IsDefined(propDest, typeof(ComplexBindingResolver)))
+                if (Attribute.IsDefined(sourceProperty, typeof(ComplexBindingResolver)) ||
+                    Attribute.IsDefined(destinationProperty, typeof(ComplexBindingResolver)))
                 {
-                    return GetResolvedor(typeof(ComplexBindingResolver));
+                    return GetResolver(typeof(ComplexBindingResolver));
                 }
 
-                return GetResolvedor(typeof(AssociationBindingResolver));
+                return GetResolver(typeof(AssociationBindingResolver));
             }
 
-            return GetResolvedor(typeof(ConversionBindingResolver));
+            return GetResolver(typeof(ConversionBindingResolver));
         }
     }
 }

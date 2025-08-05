@@ -14,21 +14,32 @@ namespace ApiBase.Core.Common.Bindings
 
         public ListBindingResolver()
         {
-            _selectMethod = typeof(Enumerable).GetMethods().FirstOrDefault((MethodInfo p) => p.Name == "Select");
-            _toListMethod = typeof(Enumerable).GetMethods().FirstOrDefault((MethodInfo p) => p.Name == "ToList");
+            _selectMethod = typeof(Enumerable)
+                .GetMethods()
+                .FirstOrDefault(m => m.Name == nameof(Enumerable.Select) && m.GetParameters().Length == 2)!;
+
+            _toListMethod = typeof(Enumerable)
+                .GetMethods()
+                .FirstOrDefault(m => m.Name == nameof(Enumerable.ToList) && m.GetParameters().Length == 1)!;
         }
 
-        public MemberAssignment Resolver(MemberInitResolver resolvedorMemberInit, int nivel, Expression parentExp, PropertyInfo propSrc, PropertyInfo propDest)
+        public MemberAssignment Resolve(MemberInitResolver memberInitResolver, int level, Expression parentExpression, PropertyInfo sourceProperty, PropertyInfo destinationProperty)
         {
-            Type type = propSrc.PropertyType.GetGenericArguments().First();
-            Type type2 = propDest.PropertyType.GetGenericArguments().First();
-            ParameterExpression parameterExpression = Expression.Parameter(type, $"p{nivel}");
-            LambdaExpression lambdaExpression = Expression.Lambda(resolvedorMemberInit.Resolver(nivel, parameterExpression, type, type2), parameterExpression);
-            MethodInfo method = _selectMethod.MakeGenericMethod(type, type2);
-            MemberExpression memberExpression = Expression.Property(parentExp, propSrc);
-            MethodCallExpression arg = Expression.Call(method, new Expression[2] { memberExpression, lambdaExpression });
-            MethodCallExpression expression = Expression.Call(_toListMethod.MakeGenericMethod(type2), arg);
-            return Expression.Bind(propDest, expression);
+            Type sourceElementType = sourceProperty.PropertyType.GetGenericArguments().First();
+            Type destinationElementType = destinationProperty.PropertyType.GetGenericArguments().First();
+
+            ParameterExpression parameter = Expression.Parameter(sourceElementType, $"p{level}");
+
+            LambdaExpression selectorLambda = Expression.Lambda(memberInitResolver.Resolve(level, parameter, sourceElementType, destinationElementType), parameter);
+
+            MethodInfo selectGeneric = _selectMethod.MakeGenericMethod(sourceElementType, destinationElementType);
+            MethodInfo toListGeneric = _toListMethod.MakeGenericMethod(destinationElementType);
+
+            MemberExpression sourceMember = Expression.Property(parentExpression, sourceProperty);
+            MethodCallExpression selectCall = Expression.Call(selectGeneric, sourceMember, selectorLambda);
+            MethodCallExpression toListCall = Expression.Call(toListGeneric, selectCall);
+
+            return Expression.Bind(destinationProperty, toListCall);
         }
     }
 }

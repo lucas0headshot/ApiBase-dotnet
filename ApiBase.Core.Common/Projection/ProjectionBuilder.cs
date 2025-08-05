@@ -10,14 +10,14 @@ namespace ApiBase.Core.Common.Projection
         {
             Type typeFromHandle = typeof(TSource);
             ParameterExpression parameterExpression = Expression.Parameter(typeFromHandle, "p");
-            return Expression.Lambda<Func<TSource, TDestination>>(new MemberInitResolver().Resolver(0, parameterExpression, typeFromHandle, typeof(TDestination)), new ParameterExpression[1] { parameterExpression });
+            return Expression.Lambda<Func<TSource, TDestination>>(new MemberInitResolver().Resolve(0, parameterExpression, typeFromHandle, typeof(TDestination)), new ParameterExpression[1] { parameterExpression });
         }
 
         public Expression<Func<TSource, object>> Build<TSource>(Type targetType)
         {
             Type typeFromHandle = typeof(TSource);
             ParameterExpression parameterExpression = Expression.Parameter(typeFromHandle, "p");
-            return Expression.Lambda<Func<TSource, object>>(new MemberInitResolver().Resolver(0, parameterExpression, typeFromHandle, targetType), new ParameterExpression[1] { parameterExpression });
+            return Expression.Lambda<Func<TSource, object>>(new MemberInitResolver().Resolve(0, parameterExpression, typeFromHandle, targetType), new ParameterExpression[1] { parameterExpression });
         }
     }
 }

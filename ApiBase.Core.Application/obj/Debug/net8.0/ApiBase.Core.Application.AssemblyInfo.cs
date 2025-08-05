@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("My Api lib with Applications")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ea9947cc5b6628e171169c3faf3bea62bc7b1fe3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ea0fcae2964732bf4295b25f54870a1cda91efb")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiBase.Core.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiBase.Core.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

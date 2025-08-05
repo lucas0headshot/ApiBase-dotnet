@@ -6,12 +6,12 @@ namespace ApiBase.Core.Common.Bindings
 {
     public class AssociationBindingResolver : IBindingResolver
     {
-        public MemberAssignment Resolver(MemberInitResolver resolvedorMemberInit, int nivel, Expression parentExp, PropertyInfo propSrc, PropertyInfo propDest)
+        public MemberAssignment Resolve(MemberInitResolver memberInitResolver, int level, Expression parentExpression, PropertyInfo sourceProperty, PropertyInfo destinationProperty)
         {
-            MemberExpression memberExpression = Expression.Property(parentExp, propSrc);
-            MemberInitExpression ifFalse = resolvedorMemberInit.Resolver(nivel, memberExpression, propSrc.PropertyType, propDest.PropertyType);
-            ConditionalExpression expression = Expression.Condition(Expression.Equal(memberExpression, Expression.Constant(null)), Expression.Constant(null, propDest.PropertyType), ifFalse);
-            return Expression.Bind(propDest, expression);
+            MemberExpression memberExpression = Expression.Property(parentExpression, sourceProperty);
+            MemberInitExpression ifFalse = memberInitResolver.Resolve(level, memberExpression, sourceProperty.PropertyType, destinationProperty.PropertyType);
+            ConditionalExpression expression = Expression.Condition(Expression.Equal(memberExpression, Expression.Constant(null)), Expression.Constant(null, destinationProperty.PropertyType), ifFalse);
+            return Expression.Bind(destinationProperty, expression);
         }
     }
 }

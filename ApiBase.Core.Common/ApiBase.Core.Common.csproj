@@ -2,7 +2,7 @@
 
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
-		<Version>1.0.0</Version>
+		<Version>1.0.1</Version>
 		<Authors>Mateus</Authors>
 		<Description>My Common lib with shared resources</Description>
 		<PackageId>ApiBase.Core.Common</PackageId>
