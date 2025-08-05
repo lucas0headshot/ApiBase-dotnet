@@ -13,11 +13,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mateus")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("My Common lib with shared resources")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.1.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.1+3ea0fcae2964732bf4295b25f54870a1cda91efb")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.2.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.2+e7da9cd23bd4013284981fbe2971db04f0627141")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiBase.Core.Common")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiBase.Core.Common")]
-[assembly: System.Reflection.AssemblyVersionAttribute("1.0.1.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("1.0.2.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.
 

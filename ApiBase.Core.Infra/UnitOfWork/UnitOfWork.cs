@@ -93,7 +93,6 @@ namespace ApiBase.Core.Infra.UnitOfWork
             if (source is IDictionary<string, object> dict)
             {
                 var result = new Dictionary<string, object>(dict);
-                result["CustomFieldInfo"] = $"Custom fields for {typeof(T).Name}";
                 return result;
             }
 
@@ -105,7 +104,6 @@ namespace ApiBase.Core.Infra.UnitOfWork
                 target[prop.Name] = prop.GetValue(source);
             }
 
-            target["CustomFieldInfo"] = $"Custom fields for {typeof(T).Name}";
             return target;
         }
     }

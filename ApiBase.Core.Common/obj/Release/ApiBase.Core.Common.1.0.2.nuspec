@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>ApiBase.Core.Common</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <authors>Mateus</authors>
     <description>My Common lib with shared resources</description>
     <repository type="git" commit="e7da9cd23bd4013284981fbe2971db04f0627141" />

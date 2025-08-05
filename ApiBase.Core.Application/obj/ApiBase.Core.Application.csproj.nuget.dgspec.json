@@ -83,7 +83,7 @@
       }
     },
     "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Common\\ApiBase.Core.Common.csproj": {
-      "version": "1.0.1",
+      "version": "1.0.3",
       "restore": {
         "projectUniqueName": "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Common\\ApiBase.Core.Common.csproj",
         "projectName": "ApiBase.Core.Common",

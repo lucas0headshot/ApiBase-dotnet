@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("My Repository lib with shared repositories")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.3.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.3+3ea0fcae2964732bf4295b25f54870a1cda91efb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.3+e7da9cd23bd4013284981fbe2971db04f0627141")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiBase.Core.Repositories")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiBase.Core.Repositories")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.3.0")]
