@@ -55,9 +55,8 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mateu\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\mateus.kogl\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.3",
@@ -65,15 +64,14 @@
       "projectUniqueName": "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Common\\ApiBase.Core.Common.csproj",
       "projectName": "ApiBase.Core.Common",
       "projectPath": "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Common\\ApiBase.Core.Common.csproj",
-      "packagesPath": "C:\\Users\\mateu\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\mateus.kogl\\.nuget\\packages\\",
       "outputPath": "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Common\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\mateu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mateus.kogl\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -81,10 +79,9 @@
         "net8.0"
       ],
       "sources": {
-        "C:\\Desenvolvimento\\LocalNugetPackages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://nuget.useall.com.br/nuget": {},
+        "https://www.nuget.org/api/v2/": {}
       },
       "frameworks": {
         "net8.0": {
@@ -102,7 +99,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -129,7 +126,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

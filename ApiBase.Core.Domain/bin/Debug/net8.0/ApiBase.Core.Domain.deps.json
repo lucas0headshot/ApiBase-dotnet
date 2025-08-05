@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "ApiBase.Core.Domain/1.0.0": {
         "dependencies": {
-          "ApiBase.Core.Common": "1.0.0"
+          "ApiBase.Core.Common": "1.0.3"
         },
         "runtime": {
           "ApiBase.Core.Domain.dll": {}
@@ -22,14 +22,14 @@
           }
         }
       },
-      "ApiBase.Core.Common/1.0.0": {
+      "ApiBase.Core.Common/1.0.3": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
           "ApiBase.Core.Common.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
+            "assemblyVersion": "1.0.3.0",
+            "fileVersion": "1.0.3.0"
           }
         }
       }
@@ -48,7 +48,7 @@
       "path": "newtonsoft.json/13.0.3",
       "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
     },
-    "ApiBase.Core.Common/1.0.0": {
+    "ApiBase.Core.Common/1.0.3": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

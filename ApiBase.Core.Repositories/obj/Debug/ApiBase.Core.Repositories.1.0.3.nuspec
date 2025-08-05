@@ -5,10 +5,10 @@
     <version>1.0.3</version>
     <authors>Mateus</authors>
     <description>My Repository lib with shared repositories</description>
-    <repository type="git" commit="3ea0fcae2964732bf4295b25f54870a1cda91efb" />
+    <repository type="git" commit="9d4d0d8a03655b997a62cf3a5acd7d0839aab2e3" />
     <dependencies>
       <group targetFramework="net8.0">
-        <dependency id="ApiBase.Core.Common" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="ApiBase.Core.Common" version="1.0.3" exclude="Build,Analyzers" />
         <dependency id="ApiBase.Core.Domain" version="1.0.0" exclude="Build,Analyzers" />
         <dependency id="Microsoft.EntityFrameworkCore" version="9.0.7" exclude="Build,Analyzers" />
         <dependency id="Microsoft.EntityFrameworkCore.Relational" version="9.0.7" exclude="Build,Analyzers" />

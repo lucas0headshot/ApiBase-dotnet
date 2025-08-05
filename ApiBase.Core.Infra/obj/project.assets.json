@@ -2,6 +2,30 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "ApiBase.Core.Common/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "compile": {
+          "lib/net8.0/ApiBase.Core.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/ApiBase.Core.Common.dll": {}
+        }
+      },
+      "ApiBase.Core.Domain/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "ApiBase.Core.Common": "1.0.0"
+        },
+        "compile": {
+          "lib/net8.0/ApiBase.Core.Domain.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/ApiBase.Core.Domain.dll": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore/9.0.7": {
         "type": "package",
         "dependencies": {
@@ -222,36 +246,34 @@
         "build": {
           "buildTransitive/net8.0/_._": {}
         }
-      },
-      "ApiBase.Core.Common/1.0.3": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.3"
-        },
-        "compile": {
-          "bin/placeholder/ApiBase.Core.Common.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ApiBase.Core.Common.dll": {}
-        }
-      },
-      "ApiBase.Core.Domain/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "ApiBase.Core.Common": "1.0.3"
-        },
-        "compile": {
-          "bin/placeholder/ApiBase.Core.Domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ApiBase.Core.Domain.dll": {}
-        }
       }
     }
   },
   "libraries": {
+    "ApiBase.Core.Common/1.0.3": {
+      "sha512": "CxwjTqCkZykYdcZgICvowZWl4GheuxrWys9riGtZiBXVXQifGSSOAoKjz/m6Isi8nHvYwsI/9rjqZP/NBohC5Q==",
+      "type": "package",
+      "path": "apibase.core.common/1.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "apibase.core.common.1.0.3.nupkg.sha512",
+        "apibase.core.common.nuspec",
+        "lib/net8.0/ApiBase.Core.Common.dll"
+      ]
+    },
+    "ApiBase.Core.Domain/1.0.0": {
+      "sha512": "PQs1c+3Fm0oMtU0v2OXxMXHkWhuLO76D+D3c1dvPecPBgYh/FUVxRmDf87TWFq0Itl25XqTnPDQ0C2WCfVSxbA==",
+      "type": "package",
+      "path": "apibase.core.domain/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "apibase.core.domain.1.0.0.nupkg.sha512",
+        "apibase.core.domain.nuspec",
+        "lib/net8.0/ApiBase.Core.Domain.dll"
+      ]
+    },
     "Microsoft.EntityFrameworkCore/9.0.7": {
       "sha512": "PbD0q5ax15r91jD4TN7xbDCjldZSz4JfpYN4ZZjAkWeUyROkV92Ydg0O2/1keFA+2u3KPsDkJMmBKv2zQ06ZVg==",
       "type": "package",
@@ -643,16 +665,6 @@
         "system.diagnostics.diagnosticsource.nuspec",
         "useSharedDesignerContext.txt"
       ]
-    },
-    "ApiBase.Core.Common/1.0.3": {
-      "type": "project",
-      "path": "../ApiBase.Core.Common/ApiBase.Core.Common.csproj",
-      "msbuildProject": "../ApiBase.Core.Common/ApiBase.Core.Common.csproj"
-    },
-    "ApiBase.Core.Domain/1.0.0": {
-      "type": "project",
-      "path": "../ApiBase.Core.Domain/ApiBase.Core.Domain.csproj",
-      "msbuildProject": "../ApiBase.Core.Domain/ApiBase.Core.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -663,9 +675,8 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mateu\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\mateus.kogl\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -673,15 +684,14 @@
       "projectUniqueName": "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Infra\\ApiBase.Core.Infra.csproj",
       "projectName": "ApiBase.Core.Infra",
       "projectPath": "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Infra\\ApiBase.Core.Infra.csproj",
-      "packagesPath": "C:\\Users\\mateu\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\mateus.kogl\\.nuget\\packages\\",
       "outputPath": "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Infra\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\mateu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mateus.kogl\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -689,22 +699,14 @@
         "net8.0"
       ],
       "sources": {
-        "C:\\Desenvolvimento\\LocalNugetPackages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://nuget.useall.com.br/nuget": {},
+        "https://www.nuget.org/api/v2/": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {
-            "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Common\\ApiBase.Core.Common.csproj": {
-              "projectPath": "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Common\\ApiBase.Core.Common.csproj"
-            },
-            "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Domain\\ApiBase.Core.Domain.csproj": {
-              "projectPath": "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Domain\\ApiBase.Core.Domain.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -717,12 +719,20 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "ApiBase.Core.Common": {
+            "target": "Package",
+            "version": "[1.0.3, )"
+          },
+          "ApiBase.Core.Domain": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[9.0.7, )"
@@ -744,7 +754,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -13,9 +13,8 @@ using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mateus")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
-[assembly: System.Reflection.AssemblyDescriptionAttribute("My Domain lib with Entity and Interfaces")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7da9cd23bd4013284981fbe2971db04f0627141")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d4d0d8a03655b997a62cf3a5acd7d0839aab2e3")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiBase.Core.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiBase.Core.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
