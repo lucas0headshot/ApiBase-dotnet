@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("My Common lib with shared resources")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+777864d476b9fae7af57ad41004d2e6b60e7200f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ea9947cc5b6628e171169c3faf3bea62bc7b1fe3")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiBase.Core.Common")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiBase.Core.Common")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

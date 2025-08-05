@@ -8,16 +8,16 @@ namespace ApiBase.Core.Common.Projection
     {
         public Expression<Func<TSource, TDestination>> Build<TSource, TDestination>()
         {
-            var parameter = Expression.Parameter(typeof(TSource), "src");
-            var body = new MemberInitResolver().Resolve(parameter, typeof(TSource), typeof(TDestination), 0);
-            return Expression.Lambda<Func<TSource, TDestination>>(body, parameter);
+            Type typeFromHandle = typeof(TSource);
+            ParameterExpression parameterExpression = Expression.Parameter(typeFromHandle, "p");
+            return Expression.Lambda<Func<TSource, TDestination>>(new MemberInitResolver().Resolver(0, parameterExpression, typeFromHandle, typeof(TDestination)), new ParameterExpression[1] { parameterExpression });
         }
 
         public Expression<Func<TSource, object>> Build<TSource>(Type targetType)
         {
-            var parameter = Expression.Parameter(typeof(TSource), "src");
-            var body = new MemberInitResolver().Resolve(parameter, typeof(TSource), targetType, 0);
-            return Expression.Lambda<Func<TSource, object>>(body, parameter);
+            Type typeFromHandle = typeof(TSource);
+            ParameterExpression parameterExpression = Expression.Parameter(typeFromHandle, "p");
+            return Expression.Lambda<Func<TSource, object>>(new MemberInitResolver().Resolver(0, parameterExpression, typeFromHandle, targetType), new ParameterExpression[1] { parameterExpression });
         }
     }
 }

@@ -18,6 +18,7 @@
 		<ProjectReference Include="..\ApiBase.Core.Application\ApiBase.Core.Application.csproj" />
 		<ProjectReference Include="..\ApiBase.Core.Common\ApiBase.Core.Common.csproj" />
 		<ProjectReference Include="..\ApiBase.Core.Domain\ApiBase.Core.Domain.csproj" />
+		<ProjectReference Include="..\ApiBase.Core.Infra\ApiBase.Core.Infra.csproj" />
 	</ItemGroup>
 
 </Project>

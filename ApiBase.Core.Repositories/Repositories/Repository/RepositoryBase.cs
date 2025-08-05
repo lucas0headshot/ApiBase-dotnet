@@ -116,13 +116,28 @@ namespace ApiBase.Core.Repositories.Repositories.Repository
                 Filters = filters
             };
             List<FilterGroup> list = new List<FilterGroup>();
+
             list.Add(item);
+
             return Get(list, order, includes);
         }
 
         public IQueryable<T> Get(List<FilterGroup> filters, List<SortModel> order, params string[] includes)
         {
-            throw new NotImplementedException();
+            IQueryable<T> queryable = DbSet.AsQueryable();
+
+            if(includes != null)
+            {
+                foreach(string navigationPropertyPath in includes)
+                {
+                    queryable = queryable.Include(navigationPropertyPath);
+                }
+            }
+
+            QueryBuilder<T> queryBuilder = new QueryBuilder<T>();
+            queryBuilder.Build(queryable, filters, order);
+
+            return queryBuilder.Query;
         }
 
         public IQueryable<T> Where(Expression<Func<T, bool>> expression)

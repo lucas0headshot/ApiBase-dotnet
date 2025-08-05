@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>ApiBase.Core.Repositories</id>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <authors>Mateus</authors>
     <description>My Repository lib with shared repositories</description>
     <repository type="git" commit="ea9947cc5b6628e171169c3faf3bea62bc7b1fe3" />
@@ -16,6 +16,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Repositories\bin\Release\net8.0\ApiBase.Core.Repositories.dll" target="lib\net8.0\ApiBase.Core.Repositories.dll" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Repositories\bin\Debug\net8.0\ApiBase.Core.Repositories.dll" target="lib\net8.0\ApiBase.Core.Repositories.dll" />
   </files>
 </package>

@@ -6,10 +6,10 @@ namespace ApiBase.Core.Common.Bindings
 {
     public class ConversionBindingResolver : IBindingResolver
     {
-        public MemberAssignment Resolve(MemberInitResolver resolver, int depth, Expression source, PropertyInfo srcProp, PropertyInfo destProp)
+        public MemberAssignment Resolver(MemberInitResolver resolvedorMemberInit, int nivel, Expression parentExp, PropertyInfo propSrc, PropertyInfo propDest)
         {
-            var converted = Expression.Convert(Expression.Property(source, srcProp), destProp.PropertyType);
-            return Expression.Bind(destProp, converted);
+            UnaryExpression expression = Expression.Convert(Expression.Property(parentExp, propSrc), propDest.PropertyType);
+            return Expression.Bind(propDest, expression);
         }
     }
 }

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("My Infra lib with shared resources")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+305e7c9bcd709f5e4fc5dda8c2ddc550090df11f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ea9947cc5b6628e171169c3faf3bea62bc7b1fe3")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiBase.Core.Infra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiBase.Core.Infra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

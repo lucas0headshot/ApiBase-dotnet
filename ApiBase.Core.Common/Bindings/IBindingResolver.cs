@@ -6,6 +6,6 @@ namespace ApiBase.Core.Common.Bindings
 {
     public interface IBindingResolver
     {
-        MemberAssignment Resolve(MemberInitResolver resolver, int depth, Expression source, PropertyInfo srcProp, PropertyInfo destProp);
+        MemberAssignment Resolver(MemberInitResolver resolvedorMemberInit, int nivel, Expression parentExp, PropertyInfo propSrc, PropertyInfo propDest);
     }
 }
