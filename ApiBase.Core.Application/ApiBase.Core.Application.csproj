@@ -1,15 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
-		<Version>1.0.0</Version>
+		<Version>1.0.2</Version>
 		<Authors>Mateus</Authors>
 		<PackageId>ApiBase.Core.Application</PackageId>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="ApiBase.Core.Common" Version="1.0.3" />
-		<PackageReference Include="ApiBase.Core.Domain" Version="1.0.0" />
-		<PackageReference Include="ApiBase.Core.Infra" Version="1.0.0" />
+	  <ProjectReference Include="..\ApiBase.Core.Common\ApiBase.Core.Common.csproj" />
+	  <ProjectReference Include="..\ApiBase.Core.Domain\ApiBase.Core.Domain.csproj" />
+	  <ProjectReference Include="..\ApiBase.Core.Infra\ApiBase.Core.Infra.csproj" />
 	</ItemGroup>
 </Project>

@@ -6,10 +6,10 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "ApiBase.Core.Infra/1.0.0": {
+      "ApiBase.Core.Infra/1.0.2": {
         "dependencies": {
-          "ApiBase.Core.Common": "1.0.0",
-          "ApiBase.Core.Domain": "1.0.0",
+          "ApiBase.Core.Common": "1.0.5",
+          "ApiBase.Core.Domain": "1.0.2",
           "Microsoft.EntityFrameworkCore": "9.0.7"
         },
         "runtime": {
@@ -145,32 +145,32 @@
           }
         }
       },
-      "ApiBase.Core.Common/1.0.0": {
+      "ApiBase.Core.Common/1.0.5": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
           "ApiBase.Core.Common.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
+            "assemblyVersion": "1.0.5.0",
+            "fileVersion": "1.0.5.0"
           }
         }
       },
-      "ApiBase.Core.Domain/1.0.0": {
+      "ApiBase.Core.Domain/1.0.2": {
         "dependencies": {
-          "ApiBase.Core.Common": "1.0.0"
+          "ApiBase.Core.Common": "1.0.5"
         },
         "runtime": {
           "ApiBase.Core.Domain.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
+            "assemblyVersion": "1.0.2.0",
+            "fileVersion": "1.0.2.0"
           }
         }
       }
     }
   },
   "libraries": {
-    "ApiBase.Core.Infra/1.0.0": {
+    "ApiBase.Core.Infra/1.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -266,12 +266,12 @@
       "path": "system.diagnostics.diagnosticsource/9.0.7",
       "hashPath": "system.diagnostics.diagnosticsource.9.0.7.nupkg.sha512"
     },
-    "ApiBase.Core.Common/1.0.0": {
+    "ApiBase.Core.Common/1.0.5": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "ApiBase.Core.Domain/1.0.0": {
+    "ApiBase.Core.Domain/1.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

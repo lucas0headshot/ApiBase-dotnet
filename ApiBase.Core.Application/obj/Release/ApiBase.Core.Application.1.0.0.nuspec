@@ -4,11 +4,11 @@
     <id>ApiBase.Core.Application</id>
     <version>1.0.0</version>
     <authors>Mateus</authors>
-    <description>My Api lib with Applications</description>
-    <repository type="git" commit="eeb8f4a53c874d7a487d837f3ed648558a5a02fd" />
+    <description>Package Description</description>
+    <repository type="git" commit="b5592c038f2c429d4bc70bd0344cedfc4bdd997b" />
     <dependencies>
       <group targetFramework="net8.0">
-        <dependency id="ApiBase.Core.Common" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="ApiBase.Core.Common" version="1.0.3" exclude="Build,Analyzers" />
         <dependency id="ApiBase.Core.Domain" version="1.0.0" exclude="Build,Analyzers" />
         <dependency id="ApiBase.Core.Infra" version="1.0.0" exclude="Build,Analyzers" />
       </group>

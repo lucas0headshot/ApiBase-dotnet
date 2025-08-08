@@ -4,8 +4,8 @@
     <id>ApiBase.Core.Infra</id>
     <version>1.0.0</version>
     <authors>Mateus</authors>
-    <description>My Infra lib with shared resources</description>
-    <repository type="git" commit="9d4d0d8a03655b997a62cf3a5acd7d0839aab2e3" />
+    <description>Package Description</description>
+    <repository type="git" commit="b5592c038f2c429d4bc70bd0344cedfc4bdd997b" />
     <dependencies>
       <group targetFramework="net8.0">
         <dependency id="ApiBase.Core.Common" version="1.0.3" exclude="Build,Analyzers" />
