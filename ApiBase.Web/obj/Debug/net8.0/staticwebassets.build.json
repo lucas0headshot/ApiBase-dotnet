@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "F5+OytEebzun2ksDVtuac3VIxB3TMij3pEaGB/IRNQ8=",
+  "Source": "ApiBase.Web",
+  "BasePath": "_content/ApiBase.Web",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

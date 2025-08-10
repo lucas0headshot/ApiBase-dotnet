@@ -688,7 +688,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "1.0.2",
+    "version": "1.0.3",
     "restore": {
       "projectUniqueName": "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Application\\ApiBase.Core.Application.csproj",
       "projectName": "ApiBase.Core.Application",

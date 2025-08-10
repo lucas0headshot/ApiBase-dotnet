@@ -5,18 +5,23 @@
 		<Authors>Mateus</Authors>
 		<PackageId>ApiBase.Core.Api</PackageId>
 		<IsPackable>true</IsPackable>
-		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<IncludeContentInPack>true</IncludeContentInPack>
 		<ContentTargetFolders>content</ContentTargetFolders>
 		<EnableDefaultContentItems>false</EnableDefaultContentItems>
 		<GenerateDocumentationFile>false</GenerateDocumentationFile>
-		<NoWarn>$(NoWarn);1591</NoWarn>
 		<Nullable>enable</Nullable>
+		<IncludeBuildOutput>false</IncludeBuildOutput>
+		<NoPackageAnalysis>false</NoPackageAnalysis>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Content Include="Controllers/**" PackagePath="contentFiles\cs\net8.0\Controllers" />
-		<Content Include="Program.cs" PackagePath="contentFiles\cs\net8.0" />
+		<None Include="Controllers/**" Pack="true" PackagePath="contentFiles\cs\net8.0\Controllers" CopyToOutputDirectory="PreserveNewest" />
+		<None Include="Program.cs" Pack="true" PackagePath="contentFiles\cs\net8.0" CopyToOutputDirectory="PreserveNewest" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="Controllers/**" Pack="true" PackagePath="contentFiles\any\any\Controllers" />
 	</ItemGroup>
 
 	<ItemGroup>

@@ -11,6 +11,7 @@ using System.Net;
 
 namespace ApiBase.Core.Api.Controllers.BaseGuid
 {
+    [ApiController]
     public class ControllerGuid<TApplication, TView> : BaseApiController<TApplication> where TApplication : IApplicationGuid<TView> where TView : IdGuidView, new()
     {
         protected ControllerGuid(TApplication application) : base(application) { }

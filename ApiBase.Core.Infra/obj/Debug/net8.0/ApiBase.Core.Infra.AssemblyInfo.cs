@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mateus")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.3.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.3+6eeb26f64df55161db9ca1764d4d194fee33c469")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.3+5f2af1529f8c3716fdda3ea3fe146e3b6ab3e8da")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiBase.Core.Infra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiBase.Core.Infra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.3.0")]

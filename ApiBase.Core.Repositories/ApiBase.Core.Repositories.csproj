@@ -4,30 +4,18 @@
 		<Version>1.0.6</Version>
 		<Authors>Mateus</Authors>
 		<PackageId>ApiBase.Core.Repositories</PackageId>
-		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageOutputPath>./nupkg</PackageOutputPath>
-		<IncludeBuildOutput>true</IncludeBuildOutput>
 		<GenerateDocumentationFile>false</GenerateDocumentationFile>
-		<NoPackageAnalysis>true</NoPackageAnalysis>
 		<TargetsForTfmSpecificContentInPackage>$(TargetsForTfmSpecificContentInPackage);PackProjectReferences</TargetsForTfmSpecificContentInPackage>
 		<IncludeSymbols>false</IncludeSymbols>
 		<IncludeSource>false</IncludeSource>
 		<GenerateDocumentationFile>false</GenerateDocumentationFile>
 		<NoWarn>$(NoWarn);1591</NoWarn>
 		<Nullable>enable</Nullable>
+		<IncludeBuildOutput>false</IncludeBuildOutput>
+		<NoPackageAnalysis>false</NoPackageAnalysis>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
 	</PropertyGroup>
-
-	<Target Name="PackProjectReferences" DependsOnTargets="ResolveReferences">
-		<ItemGroup>
-			<_ProjectReferences Include="@(ProjectReferences)" />
-		</ItemGroup>
-		<MSBuild Projects="@(_ProjectReferences)" Targets="GetPackageInfo" BuildInParallel="true">
-			<Output TaskParameter="TargetOutputs" ItemName="_Packages" />
-		</MSBuild>
-		<ItemGroup>
-			<PackageReference Include="%(_Packages.PackageId)" Version="%(_Packages.PackageVersion)" />
-		</ItemGroup>
-	</Target>
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.7" />
