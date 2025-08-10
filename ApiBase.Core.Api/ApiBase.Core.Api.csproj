@@ -1,22 +1,30 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
-		<Version>1.0.2</Version>
+		<Version>1.0.5</Version>
 		<Authors>Mateus</Authors>
 		<PackageId>ApiBase.Core.Api</PackageId>
-		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<IsPackable>true</IsPackable>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<IncludeContentInPack>true</IncludeContentInPack>
+		<ContentTargetFolders>content</ContentTargetFolders>
+		<EnableDefaultContentItems>false</EnableDefaultContentItems>
+		<GenerateDocumentationFile>false</GenerateDocumentationFile>
+		<NoWarn>$(NoWarn);1591</NoWarn>
+		<Nullable>enable</Nullable>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+		<Content Include="Controllers/**" PackagePath="contentFiles\cs\net8.0\Controllers" />
+		<Content Include="Program.cs" PackagePath="contentFiles\cs\net8.0" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\ApiBase.Core.Application\ApiBase.Core.Application.csproj" />
-	  <ProjectReference Include="..\ApiBase.Core.Common\ApiBase.Core.Common.csproj" />
-	  <ProjectReference Include="..\ApiBase.Core.Domain\ApiBase.Core.Domain.csproj" />
-	  <ProjectReference Include="..\ApiBase.Core.Infra\ApiBase.Core.Infra.csproj" />
-	  <ProjectReference Include="..\ApiBase.Core.Repositories\ApiBase.Core.Repositories.csproj" />
+		<PackageReference Include="ApiBase.Core.Common" Version="1.0.6" />
+		<PackageReference Include="ApiBase.Core.Domain" Version="1.0.3" />
+		<PackageReference Include="ApiBase.Core.Repositories" Version="1.0.6" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+		<PackageReference Include="ApiBase.Core.Application" Version="1.0.2" />
+		<PackageReference Include="ApiBase.Core.Infra" Version="1.0.3" />
 	</ItemGroup>
 </Project>

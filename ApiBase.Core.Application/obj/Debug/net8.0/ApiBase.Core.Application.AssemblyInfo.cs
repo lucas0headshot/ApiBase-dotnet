@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mateus")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.2.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.2+b5592c038f2c429d4bc70bd0344cedfc4bdd997b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.2+6eeb26f64df55161db9ca1764d4d194fee33c469")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiBase.Core.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiBase.Core.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.2.0")]

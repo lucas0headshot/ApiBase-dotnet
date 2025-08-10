@@ -5,11 +5,35 @@
 		<Authors>Mateus</Authors>
 		<PackageId>ApiBase.Core.Application</PackageId>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageOutputPath>./nupkg</PackageOutputPath>
+		<IncludeBuildOutput>true</IncludeBuildOutput>
+		<GenerateDocumentationFile>false</GenerateDocumentationFile>
+		<NoPackageAnalysis>true</NoPackageAnalysis>
+		<TargetsForTfmSpecificContentInPackage>$(TargetsForTfmSpecificContentInPackage);PackProjectReferences</TargetsForTfmSpecificContentInPackage>
+		<IncludeSymbols>false</IncludeSymbols>
+		<IncludeSource>false</IncludeSource>
+		<GenerateDocumentationFile>false</GenerateDocumentationFile>
+		<NoWarn>$(NoWarn);1591</NoWarn>
+		<Nullable>enable</Nullable>
 	</PropertyGroup>
 
+	<Target Name="PackProjectReferences" DependsOnTargets="ResolveReferences">
+		<ItemGroup>
+			<_ProjectReferences Include="@(ProjectReferences)" />
+		</ItemGroup>
+		<MSBuild Projects="@(_ProjectReferences)"
+				 Targets="GetPackageInfo"
+				 BuildInParallel="true">
+			<Output TaskParameter="TargetOutputs" ItemName="_Packages" />
+		</MSBuild>
+		<ItemGroup>
+			<PackageReference Include="%(_Packages.PackageId)" Version="%(_Packages.PackageVersion)" />
+		</ItemGroup>
+	</Target>
+
 	<ItemGroup>
-	  <ProjectReference Include="..\ApiBase.Core.Common\ApiBase.Core.Common.csproj" />
-	  <ProjectReference Include="..\ApiBase.Core.Domain\ApiBase.Core.Domain.csproj" />
-	  <ProjectReference Include="..\ApiBase.Core.Infra\ApiBase.Core.Infra.csproj" />
+		<ProjectReference Include="..\ApiBase.Core.Common\ApiBase.Core.Common.csproj" />
+		<ProjectReference Include="..\ApiBase.Core.Domain\ApiBase.Core.Domain.csproj" />
+		<ProjectReference Include="..\ApiBase.Core.Infra\ApiBase.Core.Infra.csproj" />
 	</ItemGroup>
 </Project>

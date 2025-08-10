@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Common\\ApiBase.Core.Common.csproj": {
-      "version": "1.0.5",
+      "version": "1.0.6",
       "restore": {
         "projectUniqueName": "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Common\\ApiBase.Core.Common.csproj",
         "projectName": "ApiBase.Core.Common",
@@ -79,7 +79,7 @@
       }
     },
     "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Domain\\ApiBase.Core.Domain.csproj": {
-      "version": "1.0.2",
+      "version": "1.0.3",
       "restore": {
         "projectUniqueName": "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Domain\\ApiBase.Core.Domain.csproj",
         "projectName": "ApiBase.Core.Domain",
@@ -151,7 +151,7 @@
       }
     },
     "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Repositories\\ApiBase.Core.Repositories.csproj": {
-      "version": "1.0.5",
+      "version": "1.0.6",
       "restore": {
         "projectUniqueName": "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Repositories\\ApiBase.Core.Repositories.csproj",
         "projectName": "ApiBase.Core.Repositories",

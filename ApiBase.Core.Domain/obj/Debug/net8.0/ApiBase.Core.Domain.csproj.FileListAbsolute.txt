@@ -7,12 +7,15 @@ C:\DesenvMateus\ApiBase\ApiBase.Core.Domain\obj\Debug\net8.0\ApiBase.Core.Domain
 C:\Desenvolvimento\ApiBase\ApiBase.Core.Domain\bin\Debug\net8.0\ApiBase.Core.Domain.deps.json
 C:\Desenvolvimento\ApiBase\ApiBase.Core.Domain\bin\Debug\net8.0\ApiBase.Core.Domain.dll
 C:\Desenvolvimento\ApiBase\ApiBase.Core.Domain\bin\Debug\net8.0\ApiBase.Core.Domain.pdb
+C:\Desenvolvimento\ApiBase\ApiBase.Core.Domain\bin\Debug\net8.0\ApiBase.Core.Common.dll
+C:\Desenvolvimento\ApiBase\ApiBase.Core.Domain\bin\Debug\net8.0\ApiBase.Core.Common.pdb
 C:\Desenvolvimento\ApiBase\ApiBase.Core.Domain\obj\Debug\net8.0\ApiBase.Core.Domain.csproj.AssemblyReference.cache
 C:\Desenvolvimento\ApiBase\ApiBase.Core.Domain\obj\Debug\net8.0\ApiBase.Core.Domain.GeneratedMSBuildEditorConfig.editorconfig
 C:\Desenvolvimento\ApiBase\ApiBase.Core.Domain\obj\Debug\net8.0\ApiBase.Core.Domain.AssemblyInfoInputs.cache
 C:\Desenvolvimento\ApiBase\ApiBase.Core.Domain\obj\Debug\net8.0\ApiBase.Core.Domain.AssemblyInfo.cs
 C:\Desenvolvimento\ApiBase\ApiBase.Core.Domain\obj\Debug\net8.0\ApiBase.Core.Domain.csproj.CoreCompileInputs.cache
 C:\Desenvolvimento\ApiBase\ApiBase.Core.Domain\obj\Debug\net8.0\ApiBase.Core.Domain.sourcelink.json
+C:\Desenvolvimento\ApiBase\ApiBase.Core.Domain\obj\Debug\net8.0\ApiBase..8B36A811.Up2Date
 C:\Desenvolvimento\ApiBase\ApiBase.Core.Domain\obj\Debug\net8.0\ApiBase.Core.Domain.dll
 C:\Desenvolvimento\ApiBase\ApiBase.Core.Domain\obj\Debug\net8.0\refint\ApiBase.Core.Domain.dll
 C:\Desenvolvimento\ApiBase\ApiBase.Core.Domain\obj\Debug\net8.0\ApiBase.Core.Domain.pdb

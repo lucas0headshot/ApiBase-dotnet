@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ApiBase.Core.Common</id>
+    <version>1.0.5</version>
+    <authors>Mateus</authors>
+    <description>My Common lib with shared resources</description>
+    <repository type="git" commit="6eeb26f64df55161db9ca1764d4d194fee33c469" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="Newtonsoft.Json" version="13.0.3" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\bin\Release\net8.0\ApiBase.Core.Common.pdb" target="lib\net8.0\ApiBase.Core.Common.pdb" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\bin\Release\net8.0\ApiBase.Core.Common.dll" target="lib\net8.0\ApiBase.Core.Common.dll" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\bin\Release\net8.0\ApiBase.Core.Common.xml" target="lib\net8.0\ApiBase.Core.Common.xml" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\Attributes\ComplexProjectionAttribute.cs" target="src\ApiBase.Core.Common\Attributes\ComplexProjectionAttribute.cs" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\Bindings\AssociationBindingResolver.cs" target="src\ApiBase.Core.Common\Bindings\AssociationBindingResolver.cs" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\Bindings\BindingFactory.cs" target="src\ApiBase.Core.Common\Bindings\BindingFactory.cs" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\Bindings\ComplexBindingResolver.cs" target="src\ApiBase.Core.Common\Bindings\ComplexBindingResolver.cs" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\Bindings\ConversionBindingResolver.cs" target="src\ApiBase.Core.Common\Bindings\ConversionBindingResolver.cs" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\Bindings\DefaultBindingResolver.cs" target="src\ApiBase.Core.Common\Bindings\DefaultBindingResolver.cs" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\Bindings\IBindingResolver.cs" target="src\ApiBase.Core.Common\Bindings\IBindingResolver.cs" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\Bindings\ListBindingResolver.cs" target="src\ApiBase.Core.Common\Bindings\ListBindingResolver.cs" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\DTOs\ApiBaseResponse.cs" target="src\ApiBase.Core.Common\DTOs\ApiBaseResponse.cs" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\DTOs\QueryExecutionDTO.cs" target="src\ApiBase.Core.Common\DTOs\QueryExecutionDTO.cs" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\Enums\DatabaseProvider.cs" target="src\ApiBase.Core.Common\Enums\DatabaseProvider.cs" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\Enums\FilterOperator.cs" target="src\ApiBase.Core.Common\Enums\FilterOperator.cs" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\Extensions\CustomTypeBuilder.cs" target="src\ApiBase.Core.Common\Extensions\CustomTypeBuilder.cs" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\Extensions\DynamicTypeBuilder.cs" target="src\ApiBase.Core.Common\Extensions\DynamicTypeBuilder.cs" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\Extensions\DynamicWhereBuilder.cs" target="src\ApiBase.Core.Common\Extensions\DynamicWhereBuilder.cs" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\Extensions\Extension.cs" target="src\ApiBase.Core.Common\Extensions\Extension.cs" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\Extensions\FilterExpressionFactory.cs" target="src\ApiBase.Core.Common\Extensions\FilterExpressionFactory.cs" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\Extensions\ProjectionExtensions.cs" target="src\ApiBase.Core.Common\Extensions\ProjectionExtensions.cs" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\Extensions\ValueConverter.cs" target="src\ApiBase.Core.Common\Extensions\ValueConverter.cs" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\Projection\ObjectProjection.cs" target="src\ApiBase.Core.Common\Projection\ObjectProjection.cs" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\Projection\Projection.cs" target="src\ApiBase.Core.Common\Projection\Projection.cs" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\Projection\ProjectionBuilder.cs" target="src\ApiBase.Core.Common\Projection\ProjectionBuilder.cs" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\Query\DynamicTypeBuilder.cs" target="src\ApiBase.Core.Common\Query\DynamicTypeBuilder.cs" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\Query\FilterGroup.cs" target="src\ApiBase.Core.Common\Query\FilterGroup.cs" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\Query\FilterModel.cs" target="src\ApiBase.Core.Common\Query\FilterModel.cs" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\Query\GetView.cs" target="src\ApiBase.Core.Common\Query\GetView.cs" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\Query\IQueryableExtensions.cs" target="src\ApiBase.Core.Common\Query\IQueryableExtensions.cs" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\Query\OrderByQuery.cs" target="src\ApiBase.Core.Common\Query\OrderByQuery.cs" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\Query\QueryBuilder.cs" target="src\ApiBase.Core.Common\Query\QueryBuilder.cs" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\Query\QueryField.cs" target="src\ApiBase.Core.Common\Query\QueryField.cs" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\Query\QueryParams.cs" target="src\ApiBase.Core.Common\Query\QueryParams.cs" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\Query\SortModel.cs" target="src\ApiBase.Core.Common\Query\SortModel.cs" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\Resolvers\MemberInitResolver.cs" target="src\ApiBase.Core.Common\Resolvers\MemberInitResolver.cs" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Core.Common\ApiBase.Core.Common.csproj" target="src\ApiBase.Core.Common\ApiBase.Core.Common.csproj" />
+  </files>
+</package>

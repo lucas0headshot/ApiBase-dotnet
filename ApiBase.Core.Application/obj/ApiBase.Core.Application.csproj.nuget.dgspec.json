@@ -83,7 +83,7 @@
       }
     },
     "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Common\\ApiBase.Core.Common.csproj": {
-      "version": "1.0.5",
+      "version": "1.0.6",
       "restore": {
         "projectUniqueName": "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Common\\ApiBase.Core.Common.csproj",
         "projectName": "ApiBase.Core.Common",
@@ -157,7 +157,7 @@
       }
     },
     "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Domain\\ApiBase.Core.Domain.csproj": {
-      "version": "1.0.2",
+      "version": "1.0.3",
       "restore": {
         "projectUniqueName": "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Domain\\ApiBase.Core.Domain.csproj",
         "projectName": "ApiBase.Core.Domain",
@@ -229,7 +229,7 @@
       }
     },
     "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Infra\\ApiBase.Core.Infra.csproj": {
-      "version": "1.0.2",
+      "version": "1.0.3",
       "restore": {
         "projectUniqueName": "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core.Infra\\ApiBase.Core.Infra.csproj",
         "projectName": "ApiBase.Core.Infra",

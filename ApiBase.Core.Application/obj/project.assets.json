@@ -223,7 +223,7 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "ApiBase.Core.Common/1.0.5": {
+      "ApiBase.Core.Common/1.0.6": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
@@ -236,11 +236,11 @@
           "bin/placeholder/ApiBase.Core.Common.dll": {}
         }
       },
-      "ApiBase.Core.Domain/1.0.2": {
+      "ApiBase.Core.Domain/1.0.3": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "ApiBase.Core.Common": "1.0.5"
+          "ApiBase.Core.Common": "1.0.6"
         },
         "compile": {
           "bin/placeholder/ApiBase.Core.Domain.dll": {}
@@ -249,12 +249,12 @@
           "bin/placeholder/ApiBase.Core.Domain.dll": {}
         }
       },
-      "ApiBase.Core.Infra/1.0.2": {
+      "ApiBase.Core.Infra/1.0.3": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "ApiBase.Core.Common": "1.0.5",
-          "ApiBase.Core.Domain": "1.0.2",
+          "ApiBase.Core.Common": "1.0.6",
+          "ApiBase.Core.Domain": "1.0.3",
           "Microsoft.EntityFrameworkCore": "9.0.7"
         },
         "compile": {
@@ -659,17 +659,17 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "ApiBase.Core.Common/1.0.5": {
+    "ApiBase.Core.Common/1.0.6": {
       "type": "project",
       "path": "../ApiBase.Core.Common/ApiBase.Core.Common.csproj",
       "msbuildProject": "../ApiBase.Core.Common/ApiBase.Core.Common.csproj"
     },
-    "ApiBase.Core.Domain/1.0.2": {
+    "ApiBase.Core.Domain/1.0.3": {
       "type": "project",
       "path": "../ApiBase.Core.Domain/ApiBase.Core.Domain.csproj",
       "msbuildProject": "../ApiBase.Core.Domain/ApiBase.Core.Domain.csproj"
     },
-    "ApiBase.Core.Infra/1.0.2": {
+    "ApiBase.Core.Infra/1.0.3": {
       "type": "project",
       "path": "../ApiBase.Core.Infra/ApiBase.Core.Infra.csproj",
       "msbuildProject": "../ApiBase.Core.Infra/ApiBase.Core.Infra.csproj"
@@ -677,9 +677,9 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "ApiBase.Core.Common >= 1.0.5",
-      "ApiBase.Core.Domain >= 1.0.2",
-      "ApiBase.Core.Infra >= 1.0.2"
+      "ApiBase.Core.Common >= 1.0.6",
+      "ApiBase.Core.Domain >= 1.0.3",
+      "ApiBase.Core.Infra >= 1.0.3"
     ]
   },
   "packageFolders": {

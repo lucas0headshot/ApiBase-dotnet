@@ -6,49 +6,14 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "ApiBase.Core.Application/1.0.1": {
+      "ApiBase.Core.Application/1.0.2": {
         "dependencies": {
-          "ApiBase.Core.Common": "1.0.3",
-          "ApiBase.Core.Domain": "1.0.0",
-          "ApiBase.Core.Infra": "1.0.0"
+          "ApiBase.Core.Common": "1.0.6",
+          "ApiBase.Core.Domain": "1.0.3",
+          "ApiBase.Core.Infra": "1.0.3"
         },
         "runtime": {
           "ApiBase.Core.Application.dll": {}
-        }
-      },
-      "ApiBase.Core.Common/1.0.3": {
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.3"
-        },
-        "runtime": {
-          "lib/net8.0/ApiBase.Core.Common.dll": {
-            "assemblyVersion": "1.0.3.0",
-            "fileVersion": "1.0.3.0"
-          }
-        }
-      },
-      "ApiBase.Core.Domain/1.0.0": {
-        "dependencies": {
-          "ApiBase.Core.Common": "1.0.3"
-        },
-        "runtime": {
-          "lib/net8.0/ApiBase.Core.Domain.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "ApiBase.Core.Infra/1.0.0": {
-        "dependencies": {
-          "ApiBase.Core.Common": "1.0.3",
-          "ApiBase.Core.Domain": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "9.0.7"
-        },
-        "runtime": {
-          "lib/net8.0/ApiBase.Core.Infra.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
         }
       },
       "Microsoft.EntityFrameworkCore/9.0.7": {
@@ -179,35 +144,49 @@
             "fileVersion": "9.0.725.31616"
           }
         }
+      },
+      "ApiBase.Core.Common/1.0.6": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "ApiBase.Core.Common.dll": {
+            "assemblyVersion": "1.0.6.0",
+            "fileVersion": "1.0.6.0"
+          }
+        }
+      },
+      "ApiBase.Core.Domain/1.0.3": {
+        "dependencies": {
+          "ApiBase.Core.Common": "1.0.6"
+        },
+        "runtime": {
+          "ApiBase.Core.Domain.dll": {
+            "assemblyVersion": "1.0.3.0",
+            "fileVersion": "1.0.3.0"
+          }
+        }
+      },
+      "ApiBase.Core.Infra/1.0.3": {
+        "dependencies": {
+          "ApiBase.Core.Common": "1.0.6",
+          "ApiBase.Core.Domain": "1.0.3",
+          "Microsoft.EntityFrameworkCore": "9.0.7"
+        },
+        "runtime": {
+          "ApiBase.Core.Infra.dll": {
+            "assemblyVersion": "1.0.3.0",
+            "fileVersion": "1.0.3.0"
+          }
+        }
       }
     }
   },
   "libraries": {
-    "ApiBase.Core.Application/1.0.1": {
+    "ApiBase.Core.Application/1.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
-    },
-    "ApiBase.Core.Common/1.0.3": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-CxwjTqCkZykYdcZgICvowZWl4GheuxrWys9riGtZiBXVXQifGSSOAoKjz/m6Isi8nHvYwsI/9rjqZP/NBohC5Q==",
-      "path": "apibase.core.common/1.0.3",
-      "hashPath": "apibase.core.common.1.0.3.nupkg.sha512"
-    },
-    "ApiBase.Core.Domain/1.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-PQs1c+3Fm0oMtU0v2OXxMXHkWhuLO76D+D3c1dvPecPBgYh/FUVxRmDf87TWFq0Itl25XqTnPDQ0C2WCfVSxbA==",
-      "path": "apibase.core.domain/1.0.0",
-      "hashPath": "apibase.core.domain.1.0.0.nupkg.sha512"
-    },
-    "ApiBase.Core.Infra/1.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-EpYKoauBqgKLxKsXgwSj5sMwACoceWreoz7UYh1Al645pjhesMUYIeUUbdgaLJdSclRBa77Ic5XO3Llq/Oi23Q==",
-      "path": "apibase.core.infra/1.0.0",
-      "hashPath": "apibase.core.infra.1.0.0.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore/9.0.7": {
       "type": "package",
@@ -299,6 +278,21 @@
       "sha512": "sha512-i0uHOKl+qabSYMpY8i676wgi8TI9D3yJIh9s8eog9xhcIqWiA+8khfYkAumCmTkJNMsI7qV527VTeSiQc6tPWA==",
       "path": "system.diagnostics.diagnosticsource/9.0.7",
       "hashPath": "system.diagnostics.diagnosticsource.9.0.7.nupkg.sha512"
+    },
+    "ApiBase.Core.Common/1.0.6": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ApiBase.Core.Domain/1.0.3": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ApiBase.Core.Infra/1.0.3": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

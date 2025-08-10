@@ -1,16 +1,35 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
-		<Version>1.0.5</Version>
+		<Version>1.0.6</Version>
 		<Authors>Mateus</Authors>
 		<Description>My Common lib with shared resources</Description>
 		<PackageId>ApiBase.Core.Common</PackageId>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<IncludeBuildOutput>true</IncludeBuildOutput>
+		<GenerateDocumentationFile>false</GenerateDocumentationFile>
+		<NoPackageAnalysis>true</NoPackageAnalysis>
+		<TargetsForTfmSpecificContentInPackage>$(TargetsForTfmSpecificContentInPackage);PackProjectReferences</TargetsForTfmSpecificContentInPackage>
+		<GenerateDocumentationFile>false</GenerateDocumentationFile>
+		<NoWarn>$(NoWarn);1591</NoWarn>
+		<Nullable>enable</Nullable>
 	</PropertyGroup>
+
+	<Target Name="PackProjectReferences" DependsOnTargets="ResolveReferences">
+		<ItemGroup>
+			<_ProjectReferences Include="@(ProjectReferences)" />
+		</ItemGroup>
+		<MSBuild Projects="@(_ProjectReferences)"
+				 Targets="GetPackageInfo"
+				 BuildInParallel="true">
+			<Output TaskParameter="TargetOutputs" ItemName="_Packages" />
+		</MSBuild>
+		<ItemGroup>
+			<PackageReference Include="%(_Packages.PackageId)" Version="%(_Packages.PackageVersion)" />
+		</ItemGroup>
+	</Target>
 
 	<ItemGroup>
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 	</ItemGroup>
-
 </Project>
