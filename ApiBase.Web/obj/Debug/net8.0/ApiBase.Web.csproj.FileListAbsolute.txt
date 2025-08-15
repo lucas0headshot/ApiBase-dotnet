@@ -124,3 +124,4 @@ C:\Desenvolvimento\ApiBase\ApiBase.Web\obj\Debug\net8.0\refint\ApiBase.Web.dll
 C:\Desenvolvimento\ApiBase\ApiBase.Web\obj\Debug\net8.0\ApiBase.Web.pdb
 C:\Desenvolvimento\ApiBase\ApiBase.Web\obj\Debug\net8.0\ApiBase.Web.genruntimeconfig.cache
 C:\Desenvolvimento\ApiBase\ApiBase.Web\obj\Debug\net8.0\ref\ApiBase.Web.dll
+C:\Desenvolvimento\ApiBase\ApiBase.Web\bin\Debug\net8.0\ApiBase.Core.xml

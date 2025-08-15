@@ -12,7 +12,6 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\ApiBase.Core\ApiBase.Core.csproj" />
-		<EmbeddedResource Include="appsettings.template.json" />
 	</ItemGroup>
 
 </Project>
