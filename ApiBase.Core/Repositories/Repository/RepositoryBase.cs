@@ -75,13 +75,16 @@ namespace ApiBase.Core.Repositories.Repository
 
         public IQueryable<T> Get(params string[] includes)
         {
-            if (includes.Any()) return DbSet;
+            if (includes.Length == 0) return DbSet;
 
             IQueryable<T> queryable = DbSet.AsQueryable();
 
-            foreach (string navigationPropertyPath in includes)
+            if (includes != null && includes.Any())
             {
-                queryable = queryable.Include(navigationPropertyPath);
+                foreach (string navigationPropertyPath in includes)
+                {
+                    queryable = queryable.Include(navigationPropertyPath);
+                }
             }
 
             return queryable;

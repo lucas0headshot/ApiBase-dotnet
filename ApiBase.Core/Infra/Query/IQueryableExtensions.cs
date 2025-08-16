@@ -45,7 +45,7 @@ namespace ApiBase.Core.Infra.Query
             foreach (var kvp in dynamicProperties)
             {
                 var memberAccess = BuildMemberAccess(param, kvp.Key.Replace("_", "."));
-                bindings.Add(Expression.Bind(dynamicType.GetField(kvp.Key), memberAccess));
+                bindings.Add(Expression.Bind(dynamicType.GetProperty(kvp.Key), memberAccess));
             }
 
             var initializer = Expression.MemberInit(Expression.New(dynamicType), bindings);

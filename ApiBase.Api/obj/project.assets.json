@@ -1344,7 +1344,7 @@
           }
         }
       },
-      "ApiBase.Core/1.0.0": {
+      "ApiBase.Core/1.0.2": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
@@ -3530,7 +3530,7 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "ApiBase.Core/1.0.0": {
+    "ApiBase.Core/1.0.2": {
       "type": "project",
       "path": "../ApiBase.Core/ApiBase.Core.csproj",
       "msbuildProject": "../ApiBase.Core/ApiBase.Core.csproj"
@@ -3538,7 +3538,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "ApiBase.Core >= 1.0.0"
+      "ApiBase.Core >= 1.0.2"
     ]
   },
   "packageFolders": {
@@ -3547,7 +3547,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "1.0.1",
     "restore": {
       "projectUniqueName": "C:\\Desenvolvimento\\ApiBase\\ApiBase.Api\\ApiBase.Api.csproj",
       "projectName": "ApiBase.Api",

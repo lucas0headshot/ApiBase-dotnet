@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ApiBase.Api</id>
+    <version>1.0.1</version>
+    <authors>Mateus</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <description>Api libraries for API Base projects</description>
+    <tags>aspnetcore webapi boilerplate</tags>
+    <repository type="git" url="https://github.com/MateusCizeski/ApiBase" commit="6c1bb29fdac5fb103282889d1413ca3571649d40" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="ApiBase.Core" version="1.0.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Api\bin\Release\net8.0\ApiBase.Api.dll" target="lib\net8.0\ApiBase.Api.dll" />
+    <file src="C:\Desenvolvimento\ApiBase\ApiBase.Api\bin\Release\net8.0\ApiBase.Api.xml" target="lib\net8.0\ApiBase.Api.xml" />
+  </files>
+</package>

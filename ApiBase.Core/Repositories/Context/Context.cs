@@ -11,14 +11,9 @@ namespace ApiBase.Core.Repositories.Contexts
             base.OnConfiguring(optionsBuilder);
         }
 
-        public virtual void ApplySpecificModelCreating(ModelBuilder modelBuilder)
-        {
-        }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             ModelCreating(modelBuilder);
-            ApplySpecificModelCreating(modelBuilder);
             base.OnModelCreating(modelBuilder);
         }
 

@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Desenvolvimento\\ApiBase\\ApiBase.Api\\ApiBase.Api.csproj": {
-      "version": "1.0.0",
+      "version": "1.0.1",
       "restore": {
         "projectUniqueName": "C:\\Desenvolvimento\\ApiBase\\ApiBase.Api\\ApiBase.Api.csproj",
         "projectName": "ApiBase.Api",
@@ -77,7 +77,7 @@
       }
     },
     "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core\\ApiBase.Core.csproj": {
-      "version": "1.0.0",
+      "version": "1.0.2",
       "restore": {
         "projectUniqueName": "C:\\Desenvolvimento\\ApiBase\\ApiBase.Core\\ApiBase.Core.csproj",
         "projectName": "ApiBase.Core",

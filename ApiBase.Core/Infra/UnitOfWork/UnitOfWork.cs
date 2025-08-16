@@ -90,6 +90,7 @@ namespace ApiBase.Core.Infra.UnitOfWork
             if (source is IDictionary<string, object> dict)
             {
                 var result = new Dictionary<string, object>(dict);
+
                 return result;
             }
 

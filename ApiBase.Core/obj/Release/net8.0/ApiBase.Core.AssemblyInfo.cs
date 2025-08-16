@@ -13,11 +13,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mateus")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Core libraries for API Base projects")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0901c1f00f4846e084d4f0192b6e4db6f3be6b18")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.2.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.2+6c1bb29fdac5fb103282889d1413ca3571649d40")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiBase.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiBase.Core")]
-[assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("1.0.2.0")]
 [assembly: System.Reflection.AssemblyMetadataAttribute("RepositoryUrl", "https://github.com/MateusCizeski/ApiBase")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.
