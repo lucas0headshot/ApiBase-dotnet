@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Version>1.0.0</Version>
+		<Authors>Mateus</Authors>
+		<Nullable>enable</Nullable>
+		<NoWarn>$(NoWarn);1591</NoWarn>
+		<PackageId>ApiBase.Domain</PackageId>
+		<IncludeSymbols>true</IncludeSymbols>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageTags>aspnetcore;webapi;boilerplate</PackageTags>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<Description>Api libraries for API Base projects</Description>
+		<RepositoryUrl>https://github.com/MateusCizeski/ApiBase</RepositoryUrl>
+	</PropertyGroup>
+
+</Project>

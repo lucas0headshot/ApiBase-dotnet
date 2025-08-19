@@ -99,6 +99,7 @@ C:\Desenvolvimento\ApiBase\ApiBase.Web\bin\Debug\net8.0\runtimes\browser\lib\net
 C:\Desenvolvimento\ApiBase\ApiBase.Web\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Desenvolvimento\ApiBase\ApiBase.Web\bin\Debug\net8.0\ApiBase.Core.dll
 C:\Desenvolvimento\ApiBase\ApiBase.Web\bin\Debug\net8.0\ApiBase.Core.pdb
+C:\Desenvolvimento\ApiBase\ApiBase.Web\bin\Debug\net8.0\ApiBase.Core.xml
 C:\Desenvolvimento\ApiBase\ApiBase.Web\obj\Debug\net8.0\ApiBase.Web.csproj.AssemblyReference.cache
 C:\Desenvolvimento\ApiBase\ApiBase.Web\obj\Debug\net8.0\ApiBase.Web.GeneratedMSBuildEditorConfig.editorconfig
 C:\Desenvolvimento\ApiBase\ApiBase.Web\obj\Debug\net8.0\ApiBase.Web.AssemblyInfoInputs.cache
@@ -124,4 +125,3 @@ C:\Desenvolvimento\ApiBase\ApiBase.Web\obj\Debug\net8.0\refint\ApiBase.Web.dll
 C:\Desenvolvimento\ApiBase\ApiBase.Web\obj\Debug\net8.0\ApiBase.Web.pdb
 C:\Desenvolvimento\ApiBase\ApiBase.Web\obj\Debug\net8.0\ApiBase.Web.genruntimeconfig.cache
 C:\Desenvolvimento\ApiBase\ApiBase.Web\obj\Debug\net8.0\ref\ApiBase.Web.dll
-C:\Desenvolvimento\ApiBase\ApiBase.Web\bin\Debug\net8.0\ApiBase.Core.xml

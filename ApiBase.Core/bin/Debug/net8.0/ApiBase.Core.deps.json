@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "ApiBase.Core/1.0.0": {
+      "ApiBase.Core/1.0.2": {
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.8",
           "Microsoft.EntityFrameworkCore": "9.0.8",
@@ -915,7 +915,7 @@
     }
   },
   "libraries": {
-    "ApiBase.Core/1.0.0": {
+    "ApiBase.Core/1.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Api libraries for API Base projects")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.1.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.1+6c1bb29fdac5fb103282889d1413ca3571649d40")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.1+602a5980dc39acf28bbc8a8155ae9f815b829b6a")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiBase.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiBase.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.1.0")]

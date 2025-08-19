@@ -1,0 +1,12 @@
+C:\Desenvolvimento\ApiBase\ApiBase.Domain\bin\Debug\net8.0\ApiBase.Domain.deps.json
+C:\Desenvolvimento\ApiBase\ApiBase.Domain\bin\Debug\net8.0\ApiBase.Domain.dll
+C:\Desenvolvimento\ApiBase\ApiBase.Domain\bin\Debug\net8.0\ApiBase.Domain.pdb
+C:\Desenvolvimento\ApiBase\ApiBase.Domain\obj\Debug\net8.0\ApiBase.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Desenvolvimento\ApiBase\ApiBase.Domain\obj\Debug\net8.0\ApiBase.Domain.AssemblyInfoInputs.cache
+C:\Desenvolvimento\ApiBase\ApiBase.Domain\obj\Debug\net8.0\ApiBase.Domain.AssemblyInfo.cs
+C:\Desenvolvimento\ApiBase\ApiBase.Domain\obj\Debug\net8.0\ApiBase.Domain.csproj.CoreCompileInputs.cache
+C:\Desenvolvimento\ApiBase\ApiBase.Domain\obj\Debug\net8.0\ApiBase.Domain.sourcelink.json
+C:\Desenvolvimento\ApiBase\ApiBase.Domain\obj\Debug\net8.0\ApiBase.Domain.dll
+C:\Desenvolvimento\ApiBase\ApiBase.Domain\obj\Debug\net8.0\refint\ApiBase.Domain.dll
+C:\Desenvolvimento\ApiBase\ApiBase.Domain\obj\Debug\net8.0\ApiBase.Domain.pdb
+C:\Desenvolvimento\ApiBase\ApiBase.Domain\obj\Debug\net8.0\ref\ApiBase.Domain.dll
