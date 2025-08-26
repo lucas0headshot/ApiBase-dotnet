@@ -68,3 +68,26 @@ $RECYCLE.BIN/
 appsettings.json
 appsettings*.json
 **/appsettings.*.json
+
+# Diretórios de build do .NET
+bin/
+obj/
+
+# Arquivos gerados pelo NuGet
+*.nuget.g.props
+*.nuget.g.targets
+project.assets.json
+project.nuget.cache
+
+# VS e Rider
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+
+# Outros temporários
+[Tt]emp/
