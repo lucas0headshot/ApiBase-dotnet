@@ -8,7 +8,7 @@
 		<PackageId>ApiBase.Repository</PackageId>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<PackageTags>aspnetcore;webapi;boilerplate</PackageTags>
+		<PackageTags>aspnetcore;webapi;boilerplate;efcore;repository;repository-pattern;unitofwork;dbcontext;crud;generic-repository;api-core</PackageTags>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<Description>ApiBase Repository library: provides a generic DbContext and base repository implementation with dynamic query support for Entity Framework Core.</Description>
 		<RepositoryUrl>https://github.com/MateusCizeski/ApiBase</RepositoryUrl>
