@@ -1,6 +1,0 @@
-@ApiBase.Web_HostAddress = http://localhost:5009
-
-GET {{ApiBase.Web_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
