@@ -65,20 +65,23 @@ namespace ApiBase.Infra.Extensions
         private PropertyInfo GetProperty(Type type, string path, out MemberExpression memberExpr, ParameterExpression param)
         {
             memberExpr = null;
+            PropertyInfo property = null;
             var segments = path.Split('.');
+
             foreach (var segment in segments)
             {
-                var prop = type.GetProperty(segment);
-                if (prop == null)
+                property = type.GetProperty(segment, BindingFlags.IgnoreCase | BindingFlags.Public | BindingFlags.Instance);
+                if (property == null)
                     return null;
 
                 memberExpr = memberExpr == null
-                    ? Expression.Property(param, prop)
-                    : Expression.Property(memberExpr, prop);
+                    ? Expression.Property(param, property)
+                    : Expression.Property(memberExpr, property);
 
-                type = prop.PropertyType;
+                type = property.PropertyType;
             }
-            return type.GetProperty(segments.Last()) ?? type.GetProperty(path);
+
+            return property;
         }
 
         private Expression BuildCondition(FilterModel filter, PropertyInfo property, MemberExpression memberExpr, IQueryable query)
