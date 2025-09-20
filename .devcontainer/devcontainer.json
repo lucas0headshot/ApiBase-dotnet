@@ -1,0 +1,17 @@
+{
+    "name": "C# ASP.NET Core & PostreSQL",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "api",
+    "forwardPorts": [5000, 5001],
+    "customizations": {
+    "vscode": {
+        "extensions": [
+        "ms-dotnettools.csdevkit",
+        "ms-dotnettools.vscode-dotnet-runtime",
+        "ms-azuretools.vscode-docker"
+        ]
+    }
+    },
+    "postCreateCommand": "dotnet restore",
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}"
+}
